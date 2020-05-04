@@ -16,7 +16,8 @@
           <span class="font-serif font-bold text-xl text-black">t.t.v.</span>
           <span class="font-serif font-bold text-3xl text-primary-normal">Merwestad</span>
         </a>
-        <a class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center justify-center px-4 rounded" href="mailto:webmaster@ttvmerwestad.nl">
+        <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded" href="mailto:webmaster@ttvmerwestad.nl">
+          <i class="fas fa-paper-plane text-white mr-3"></i>
           <span class="inline-block font-sans font-bold text-lg text-white">Stuur een e-mail</span>
         </a>
       </div>
