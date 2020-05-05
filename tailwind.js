@@ -4,8 +4,8 @@ module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      serif: ['PT Serif', 'sans-serif'],
-      sans: ['Helvetica', 'sans-serif']
+      serif: ['Roboto Slab', 'serif'],
+      sans: ['Roboto', 'sans-serif']
     },
     colors: {
       black: colors.black,
