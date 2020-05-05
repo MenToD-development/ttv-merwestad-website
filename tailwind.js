@@ -4,8 +4,8 @@ module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      serif: ['Roboto Slab', 'serif'],
-      sans: ['Roboto', 'sans-serif']
+      serif: ['Libre Baskerville', 'serif'],
+      sans: ['Open Sans', 'sans-serif']
     },
     colors: {
       black: colors.black,
@@ -21,7 +21,6 @@ module.exports = {
         normal: '#267DF4',
         hover: '#0B5AC6'
       },
-
     },
     extend: {
 

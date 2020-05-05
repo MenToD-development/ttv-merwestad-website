@@ -7,8 +7,11 @@
 
     <nav class="inline-flex flex-grow justify-end items-center h-full pr-6">
       <div class="inline-flex justify-left items-center w-auto h-full">
-        <x-menu-item route-name="home">
+        <x-menu-item class="mr-4" route-name="home">
           Home
+        </x-menu-item>
+        <x-menu-item route-name="about">
+          Ttv Merwestad
         </x-menu-item>
       </div>
     </nav>
