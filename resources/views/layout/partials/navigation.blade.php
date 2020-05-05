@@ -5,13 +5,16 @@
       <span class="font-serif font-bold text-3xl text-primary-normal">Merwestad</span>
     </a>
 
-    <nav class="inline-flex flex-grow justify-end items-center h-full pr-6">
+    <nav class="inline-flex flex-grow justify-end items-center h-full pr-16">
       <div class="inline-flex justify-left items-center w-auto h-full">
-        <x-menu-item class="mr-4" route-name="home">
+        <x-menu-item class="mr-8" route-name="home">
           Home
         </x-menu-item>
-        <x-menu-item route-name="about">
-          Ttv Merwestad
+        <x-menu-item class="mr-8" route-name="about">
+          Vereniging
+        </x-menu-item>
+        <x-menu-item route-name="news">
+          Nieuws
         </x-menu-item>
       </div>
     </nav>

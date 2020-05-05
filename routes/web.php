@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/ttv-merwestad', function () {
+Route::get('/over-de-vereniging', function () {
     return view('about');
 })->name('about');
+
+Route::get('/nieuws', function () {
+    return view('news');
+})->name('news');
