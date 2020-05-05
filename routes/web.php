@@ -24,3 +24,7 @@ Route::get('/over-de-vereniging', function () {
 Route::get('/nieuws', function () {
     return view('news');
 })->name('news');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
