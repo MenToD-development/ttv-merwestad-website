@@ -1,8 +1,8 @@
 <div class="fixed bg-white w-full h-24 shadow-sm">
   <div class="container mx-auto flex items-center justify-between h-full">
     <a class="inline-block" href="{{ route('home') }}">
-      <span class="font-serif font-bold text-xl text-black">t.t.v.</span>
-      <span class="font-serif font-bold text-3xl text-primary-normal">Merwestad</span>
+      <span class="font-serif text-xl text-black">t.t.v.</span>
+      <span class="font-serif text-3xl text-primary-normal">Merwestad</span>
     </a>
 
     <nav class="inline-flex flex-grow justify-end items-center h-full pr-16">

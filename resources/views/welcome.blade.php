@@ -9,7 +9,7 @@
   <div class="bg-white w-full py-16">
     <div class="container mx-auto flex items-stretch">
       <div class="w-2/6 px-5">
-        <h1 class="font-serif text-black font-bold">
+        <h1 class="font-serif text-black">
           <span class="text-2xl">Tafeltennisvereniging</span>
           <span class="text-5xl text-primary-normal">Merwestad</span>
         </h1>
