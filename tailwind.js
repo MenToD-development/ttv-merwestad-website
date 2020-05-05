@@ -4,7 +4,7 @@ module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      serif: ['Libre Baskerville', 'serif'],
+      serif: ['Bree Serif', 'serif'],
       sans: ['Open Sans', 'sans-serif']
     },
     colors: {
