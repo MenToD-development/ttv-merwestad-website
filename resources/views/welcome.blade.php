@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-  <div class="bg-white w-full py-16">
+  <div class="bg-white w-full py-20">
     <div class="container mx-auto flex items-stretch">
       <div class="w-2/6 pr-5">
         <h1 class="font-serif text-black leading-none mb-6">
@@ -35,30 +35,32 @@
     </div>
   </div>
 
-  <div class="bg-white w-full py-16">
+  <div class="bg-secondary-normal w-full py-20">
     <div class="container mx-auto flex items-stretch">
-      <div class="w-1/3 pr-5">
-        <div class="bg-primary-normal w-full rounded-lg shadow-md">
+      <div class="w-full">
+        <div class="text-center">
+          <span class="bg-secondary-normal p-2">
+            <span class="text-sm text-primary-normal font-bold font-sans">Wat gebeurt er bij t.t.v. <Merwestad></Merwestad></span>
+          </span>
+        </div>
+        <span class="block text-center font-serif text-5xl text-black mb-6">Laatste nieuws</span>
+
+        <div class="bg-white w-full rounded-lg transition-all ease-in-out duration-100 hover:shadow-md hover:bg-secondary-normal cursor-pointer">
           <div class="px-2 py-4">
-            <div class="px-4">
-              <span class="inline-block font-serif text-2xl text-white mb-6">Laatste nieuws</span>
-            </div>
-            <a class="block p-4 hover:bg-white hover:bg-opacity-25 transition-colors ease-in-out duration-100 rounded cursor-pointer">
-              <span class="inline-block font-sans font-semibold text-lg text-white mb-3">Wij zijn gesloten t/m 1 Sept.</span>
-              <span class="inline-block font-sans text-base text-white mb-2">
+            <a class="block p-4 ">
+              <span class="inline-block font-sans font-semibold text-lg text-black mb-3">Wij zijn gesloten t/m 1 Sept.</span>
+              <span class="inline-block font-sans text-base text-black mb-2">
                 Naar aanleiding van de laatste ontwikkelingen en de aanwijzingen vanuit de RIVM en
                 de overheid dienen de gemeentelijke binnensportaccommodaties gesloten te blijven
                 tot en met [...]
               </span>
-              <span class="inline-block text-white font-sans text-base font-semibold">
+              <span class="inline-block text-primary-normal font-sans text-base font-semibold">
                 Lees verder >
               </span>
             </a>
           </div>
         </div>
       </div>
-      <div class="w-1/3 pl-5 pr-5"></div>
-      <div class="w-1/3 pl-5"></div>
     </div>
   </div>
 @endsection
