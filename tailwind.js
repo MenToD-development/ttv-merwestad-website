@@ -21,6 +21,9 @@ module.exports = {
         normal: '#267DF4',
         hover: '#0B5AC6'
       },
+      secondary: {
+        normal: 'rgba(38, 125, 244, 0.05)'
+      }
     },
     extend: {
 
