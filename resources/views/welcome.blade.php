@@ -34,4 +34,31 @@
       </div>
     </div>
   </div>
+
+  <div class="bg-white w-full py-16">
+    <div class="container mx-auto flex items-stretch">
+      <div class="w-1/3 pr-5">
+        <div class="bg-primary-normal w-full rounded-lg shadow-md">
+          <div class="px-2 py-4">
+            <div class="px-4">
+              <span class="inline-block font-serif text-2xl text-white mb-6">Laatste nieuws</span>
+            </div>
+            <a class="block p-4 hover:bg-white hover:bg-opacity-25 transition-colors ease-in-out duration-100 rounded cursor-pointer">
+              <span class="inline-block font-sans font-semibold text-lg text-white mb-3">Wij zijn gesloten t/m 1 Sept.</span>
+              <span class="inline-block font-sans text-base text-white mb-2">
+                Naar aanleiding van de laatste ontwikkelingen en de aanwijzingen vanuit de RIVM en
+                de overheid dienen de gemeentelijke binnensportaccommodaties gesloten te blijven
+                tot en met [...]
+              </span>
+              <span class="inline-block text-white font-sans text-base font-semibold">
+                Lees verder >
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/3 pl-5 pr-5"></div>
+      <div class="w-1/3 pl-5"></div>
+    </div>
+  </div>
 @endsection
