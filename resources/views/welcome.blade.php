@@ -35,29 +35,118 @@
     </div>
   </div>
 
-  <div class="bg-secondary-normal w-full py-20">
+  <div class="bg-secondary-normal w-full py-32">
     <div class="container mx-auto flex items-stretch">
       <div class="w-full">
-        <div class="text-center">
-          <span class="bg-secondary-normal p-2">
-            <span class="text-sm text-primary-normal font-bold font-sans">Wat gebeurt er bij t.t.v. <Merwestad></Merwestad></span>
+        <div class="text-center mb-2">
+          <span class="bg-secondary-normal rounded py-2 px-4">
+            <span class="text-sm text-primary-normal font-bold font-sans">Wat gebeurt er bij Merwestad</span>
           </span>
         </div>
         <span class="block text-center font-serif text-5xl text-black mb-6">Laatste nieuws</span>
 
-        <div class="bg-white w-full rounded-lg transition-all ease-in-out duration-100 hover:shadow-md hover:bg-secondary-normal cursor-pointer">
-          <div class="px-2 py-4">
-            <a class="block p-4 ">
-              <span class="inline-block font-sans font-semibold text-lg text-black mb-3">Wij zijn gesloten t/m 1 Sept.</span>
-              <span class="inline-block font-sans text-base text-black mb-2">
+        <div class="flex">
+          <div class="w-2/5 p-3">
+            <div class="bg-white w-full h-full p-6">
+              <span class="inline-block bg-secondary-normal py-2 px-4 mb-2 rounded">
+                <span class="text-sm text-primary-normal font-bold font-sans">Uitgelicht nieuwsbericht</span>
+              </span>
+              <span class="text-black text-xl font-serif block">
+                Competitie najaar 2020
+              </span>
+              <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-6">
+                Stefan de Jong - {{ \Illuminate\Support\Carbon::make('12-05-2020 21:15:06')->diffForHumans() }}
+              </span>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                Ondanks dat het er voorlopig naar uit ziet dat we pas op 1 september
+                weer mogen beginnen, heb ik toch het verzoek gehad van de bond om de
+                teams door te geven voor de najaarscompetitie. Het inschrijven kan tot
+                15 juni 2020.
+              </p>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                Waarschijnlijk zal zoals het er nu naar uitziet, zullen er geen dubbels
+                worden gespeeld. Voor reguliere competitie betekent het dat er dan 9
+                wedstrijden gespeeld worden. Bij de Duo is momenteel de intentie om een
+                extra enkel te spelen.
+              </p>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                <strong>Graag hoor ik wie of welke teams competitie willen spelen.</strong>
+              </p>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                De competitie kan regulier zijn, dit betekent een team van 3 spelers die
+                elk 3 wedstrijden spelen en (een dubbel) , dit zijn 10 wedstrijden per
+                avond. (nu waarschijnlijk 9 stuks)
+              </p>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                Ook kan dit duo zijn, dit is een team van 2 spelers, die elk 2
+                wedstrijden spelen en (een dubbel), dit zijn 5 wedstrijden, voordeel is
+                dat het niet zo laat wordt.
+              </p>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                Mocht de 1,5 meter nog steeds van toepassing zijn, dan dien je er ook
+                rekening mee te houden dat vervoer van een team in één auto vermoedelijk
+                moeilijk of niet mogelijk is.
+              </p>
+            </div>
+          </div>
+          <div class="w-3/5 p-3">
+            <div class="bg-white p-6 w-full mb-6">
+              <span class="text-black text-xl font-serif block">
+                Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020
+              </span>
+              <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-6">
+                Kirsten Bubbert - {{ \Illuminate\Support\Carbon::make('13-05-2020 10:08:51')->diffForHumans() }}
+              </span>
+              <p class="inline-block font-sans text-base text-black mb-4">
                 Naar aanleiding van de laatste ontwikkelingen en de aanwijzingen vanuit de RIVM en
-                de overheid dienen de gemeentelijke binnensportaccommodaties gesloten te blijven
-                tot en met [...]
+                de overheid dienen de gemeentelijke sportaccommodaties gesloten te blijven tot en
+                met maandag 31 augustus 2020.
+              </p>
+              <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+                 href="#"
+                 title="Nieuwsbericht: Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020">
+                <i class="fas fa-arrow-alt-circle-right text-white mr-3"></i>
+                <span class="inline-block font-sans font-bold text-base text-white">Lees verder</span>
+              </a>
+            </div>
+            <div class="bg-white p-6 w-full mb-6">
+              <span class="text-black text-xl font-serif block">
+                Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020
               </span>
-              <span class="inline-block text-primary-normal font-sans text-base font-semibold">
-                Lees verder >
+              <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-6">
+                Kirsten Bubbert - {{ \Illuminate\Support\Carbon::make('13-05-2020 10:08:51')->diffForHumans() }}
               </span>
-            </a>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                Naar aanleiding van de laatste ontwikkelingen en de aanwijzingen vanuit de RIVM en
+                de overheid dienen de gemeentelijke sportaccommodaties gesloten te blijven tot en
+                met maandag 31 augustus 2020.
+              </p>
+              <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+                 href="#"
+                 title="Nieuwsbericht: Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020">
+                <i class="fas fa-arrow-alt-circle-right text-white mr-3"></i>
+                <span class="inline-block font-sans font-bold text-base text-white">Lees verder</span>
+              </a>
+            </div>
+            <div class="bg-white p-6 w-full">
+              <span class="text-black text-xl font-serif block">
+                Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020
+              </span>
+              <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-6">
+                Kirsten Bubbert - {{ \Illuminate\Support\Carbon::make('13-05-2020 10:08:51')->diffForHumans() }}
+              </span>
+              <p class="inline-block font-sans text-base text-black mb-4">
+                Naar aanleiding van de laatste ontwikkelingen en de aanwijzingen vanuit de RIVM en
+                de overheid dienen de gemeentelijke sportaccommodaties gesloten te blijven tot en
+                met maandag 31 augustus 2020.
+              </p>
+              <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+                 href="#"
+                 title="Nieuwsbericht: Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020">
+                <i class="fas fa-arrow-alt-circle-right text-white mr-3"></i>
+                <span class="inline-block font-sans font-bold text-base text-white">Lees verder</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
