@@ -15,5 +15,14 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Post extends Model
 {
-    //
+    /**
+     * @var array
+     */
+    public $dates = [
+        'published_on',
+        'published_till',
+        'created_at',
+        'updated_at',
+        'deleted_at'
+    ];
 }
