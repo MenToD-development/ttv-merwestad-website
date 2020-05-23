@@ -49,16 +49,7 @@ class Post extends Resource
         return [
             ID::make()->sortable(),
 
-            BelongsTo::make('Auteur', 'author', __CLASS__)
-                ->showOnIndex()
-                ->showOnDetail()
-                ->hideWhenUpdating()
-                ->hideWhenCreating(),
-
-            Hidden::make('user_id')
-                ->default(static function () {
-                    return auth()->user()->id;
-                }),
+            BelongsTo::make('Auteur', 'author', User::class),
 
             TextWithSlug::make('Titel', 'title')
                 ->required()
