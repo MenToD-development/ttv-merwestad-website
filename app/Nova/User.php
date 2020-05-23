@@ -7,6 +7,7 @@ use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Password;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 
 class User extends Resource
@@ -50,6 +51,11 @@ class User extends Resource
             Text::make('Name')
                 ->sortable()
                 ->rules('required', 'max:255'),
+
+            Select::make('Type gebruiker', 'type')
+                ->options(static function () {
+                    return config('merwestad.user_types');
+                }),
 
             Text::make('Email')
                 ->sortable()
