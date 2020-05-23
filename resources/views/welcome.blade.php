@@ -6,6 +6,7 @@
 @endsection
 
 @section('content')
+  <!-- intro -->
   <div class="bg-white w-full py-20">
     <div class="container mx-auto flex items-stretch">
       <div class="w-2/6 pr-5">
@@ -40,6 +41,7 @@
     </div>
   </div>
 
+  <!-- Mogelijkheden binnen Merwestad -->
   <div class="bg-white w-full pt-20 pb-32">
     <div class="container mx-auto">
       <div class="w-full mb-16">
@@ -132,6 +134,7 @@
     </div>
   </div>
 
+  <!-- Laatste nieuws -->
   <div class="bg-secondary-normal w-full py-32">
     <div class="container mx-auto flex items-stretch">
       <div class="w-full">
@@ -246,6 +249,76 @@
             <i class="fas fa-newspaper text-white mr-3"></i>
             <span class="inline-block font-sans font-bold text-lg text-white">Bekijk meer nieuws</span>
           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white w-full py-32">
+    <div class="container mx-auto">
+      <div class="w-full mb-16">
+        <div class="text-center mb-2">
+          <span class="bg-secondary-normal rounded py-2 px-4">
+            <span class="text-sm text-primary-normal font-bold font-sans">
+              Wij doen dit samen
+            </span>
+          </span>
+        </div>
+        <span class="block text-center font-serif text-5xl text-black">
+          Onze sponsoren
+        </span>
+      </div>
+      <div class="flex justify-start items-stretch w-full mb-16">
+        <div class="w-2/3 py-4 px-6">
+          <div class="flex items-center mb-8">
+            <span class="inline-block text-6xl fa fa-medal mr-6"></span>
+            <div class="inline-block">
+              <span class="block text-xl font-serif">
+                Onze hoofdsponsor
+              </span>
+              <span class="text-3xl text-primary-normal text-black font-serif">
+                R.V. Bouw- en Timmerbedrijf
+              </span>
+            </div>
+          </div>
+          <div class="flex justify-start mb-4">
+            <img src="/images/rv-bouw-en-timmerbedrijf-logo.png" alt="RV Bouw- en timmerbedrijf" />
+          </div>
+          <p class="text-base font-sans mb-6">
+            Wanneer u op zoek bent naar een aannemersbedrijf in de regio Dordrecht dan bent u bij
+            R.V. Bouw- en Timmerbedrijf aan het juiste adres. Wij verzorgen met veel plezier een
+            breed scala aan timmer- en bouwwerkzaamheden voor zowel particulieren als bedrijven.
+            Dit doen wij het meest in de Drechtsteden. Zo hebben we in al die jaren al veel
+            tevreden klanten geholpen in o.a. Dordrecht, Zwijndrecht, Papendrecht, Sliedrecht en
+            omstreken.
+          </p>
+          <a class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center
+              justify-center px-4 rounded"
+             href="http://www.rvbouwbedrijf.nl" target="_blank"
+             title="Aannemer Dordrecht - Aannemersbedrijf, Bouwbedrijf & Timmerbedrijf">
+            <i class="fas fa-external-link-alt text-white text-lg mr-3"></i>
+            <span class="inline-block font-sans font-bold text-base text-white">
+              Ga naar de website
+            </span>
+          </a>
+        </div>
+        <div class="w-1/3 py-4 px-6 flex items-end">
+          <div class="bg-primary-normal rounded">
+            <div class="py-4 px-6">
+              <span class="block text-white font-serif text-4xl mb-12">
+                Wilt u ons ook sponsoren?
+              </span>
+              <a class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
+                  hover:bg-secondary-normal hover:shadow active:shadow-inner"
+                 href="#"
+                 title="Sponsor worden?">
+                <i class="fas fa-paper-plane text-primary-normal text-lg mr-3"></i>
+                <span class="inline-block font-sans font-bold text-lg text-primary-normal">
+                  Neem contact met ons op
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
