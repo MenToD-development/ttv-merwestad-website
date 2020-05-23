@@ -7,9 +7,25 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+/**
+ * Class User
+ *
+ * @category Model
+ * @package  App
+ * @author   mennotempelaar <menno@fourdesign.nl>
+ * @license  MIT https://github.com/mennotempelaar/ttv-merwestad-website/blob/master/LICENSE
+ * @link     https://github.com/mennotempelaar/ttv-merwestad-website
+ *
+ * @property string $type
+ */
 class User extends Authenticatable
 {
     use Notifiable;
+
+    /**
+     * @var string
+     */
+    public const TYPE_ADMIN = 'admin';
 
     /**
      * The attributes that are mass assignable.
@@ -39,6 +55,18 @@ class User extends Authenticatable
     ];
 
     /**
+     * Checks whether the user is an admin.
+     *
+     * @return bool
+     */
+    public function isAdmin(): bool
+    {
+        return $this->type === self::TYPE_ADMIN;
+    }
+
+    /**
+     * The posts which the user wrote.
+     *
      * @return HasMany
      */
     public function posts(): HasMany
