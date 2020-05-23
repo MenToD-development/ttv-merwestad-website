@@ -40,9 +40,9 @@
     </div>
   </div>
 
-  <div class="bg-white w-full py-20">
+  <div class="bg-white w-full pt-20 pb-32">
     <div class="container mx-auto">
-      <div class="w-full">
+      <div class="w-full mb-16">
         <div class="text-center mb-2">
           <span class="bg-secondary-normal rounded py-2 px-4">
             <span class="text-sm text-primary-normal font-bold font-sans">
@@ -50,9 +50,84 @@
             </span>
           </span>
         </div>
-        <span class="block text-center font-serif text-5xl text-black mb-6">
+        <span class="block text-center font-serif text-5xl text-black">
           Wat zijn de mogelijkheden?
         </span>
+      </div>
+      <div class="flex items-stretch">
+        <div class="w-1/3">
+          <div class="flex items-center justify-center mb-8">
+            <div class="inline-block mr-6">
+              <span class="fas fa-smile-beam text-6xl text-primary-normal"></span>
+            </div>
+            <div class="inline-block">
+              <span class="font-serif text-2xl">Recreatief</span>
+            </div>
+          </div>
+          <div class="w-full px-6 text-center">
+            <p class="text-lg font-sans mb-8">
+              Binnen onze vereniging hebben wij een grote groep leden die alleen recreatief spelen.
+              Hierbij rouleren we met elkaar en spelen we gewoon gezellig met elkaar op de vrije
+              tafeltennis tafels. Kom een keer langs en kijk hoe je mee kan doen zonder enige
+              ervaring.
+            </p>
+            <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+               id="route" href="#">
+              <i class="fas fa-calendar-alt text-white text-2xl mr-3"></i>
+              <span class="inline-block font-sans font-bold text-lg text-white">Bekijk agenda</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="flex items-center justify-center mb-8">
+            <div class="inline-block mr-6">
+              <span class="fas fa-calendar-check text-6xl text-primary-normal"></span>
+            </div>
+            <div class="inline-block">
+              <span class="font-serif text-2xl">Onderlinge competitie</span>
+            </div>
+          </div>
+          <div class="w-full px-6 text-center">
+            <p class="text-lg font-sans mb-8">
+              Elk half jaar organiseren we binnen onze vereniging een onderlinge competitie. Deze
+              competitie duurt ongeveer 3 weken lang en wordt meestal gespeeld op de dinsdag
+              avond. Deze onderlinge competities zijn altijd erg gezellig en een goede manier om
+              iedereen te leren kennen.
+            </p>
+            <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+               id="route" href="#">
+              <i class="fas fa-table-tennis text-white text-2xl mr-3"></i>
+              <span class="inline-block font-sans font-bold text-lg text-white">
+                Lees meer
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="flex items-center justify-center mb-8">
+            <div class="inline-block mr-6">
+              <span class="fas fa-fire text-6xl text-primary-normal"></span>
+            </div>
+            <div class="inline-block">
+              <span class="font-serif text-2xl">Competitie</span>
+            </div>
+          </div>
+          <div class="w-full px-6 text-center">
+            <p class="text-lg font-sans mb-8">
+              Wij hebben ook leden die toch graag het competitieve onderdeel in de sport willen
+              beleven. Hiervoor doen ze mee aan de NTTB competitie afdeling West. Deze competitie
+              wordt georganiseerd door de <x-link href="https://www.nttb.nl" target="_blank">
+                Nederlands tafeltennisbond</x-link>.
+            </p>
+            <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+               id="route" href="#">
+              <i class="fas fa-users text-white text-2xl mr-3"></i>
+              <span class="inline-block font-sans font-bold text-lg text-white">
+                Bekijk onze teams
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
