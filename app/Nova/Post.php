@@ -49,7 +49,11 @@ class Post extends Resource
         return [
             ID::make()->sortable(),
 
-            BelongsTo::make('Auteur', 'author', User::class),
+            BelongsTo::make('Auteur', 'author', User::class)
+                ->default(static function () {
+                    return auth()->user()->id;
+                })
+                ->readonly(),
 
             TextWithSlug::make('Titel', 'title')
                 ->required()
