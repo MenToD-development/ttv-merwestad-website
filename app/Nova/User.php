@@ -58,7 +58,8 @@ class User extends Resource
                 })
                 ->default(static function () {
                     return array_key_first(config('merwestad.user_types'));
-                }),
+                })
+                ->displayUsingLabels(),
 
             Text::make('Email')
                 ->sortable()
