@@ -159,7 +159,7 @@
           <div class="flex">
             <div class="w-1/3 h-16 flex items-center justify-start">
               <span class="inline-block font-sans text-sm text-black">
-                &copy; 2020 Menno Tempelaar
+                &copy; 2020 t.t.v. Merwestad
               </span>
             </div>
             <div class="w-1/3 h-16 flex items-center justify-center">
