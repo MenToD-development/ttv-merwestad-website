@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\DateTime;
+use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Trix;
@@ -49,10 +50,13 @@ class Post extends Resource
             ID::make()->sortable(),
 
             BelongsTo::make('Auteur', 'author', __CLASS__)
+                ->showOnIndex()
+                ->showOnDetail(),
+
+            Hidden::make('user_id')
                 ->default(static function () {
                     return auth()->user()->id;
-                })
-                ->readonly(),
+                }),
 
             TextWithSlug::make('Titel', 'title')
                 ->required()
