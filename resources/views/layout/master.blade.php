@@ -12,14 +12,14 @@
   <div id="website" class="relative flex flex-col bg-white min-w-full min-h-screen">
     @include('layout.partials.navigation')
 
-    <div class="flex-grow bg-white pt-24">
+    <div class="flex-grow bg-white pt-16 xl:pt-20 xxl:pt-24">
       @yield('content')
     </div>
 
     <footer class="w-full bg-primary-normal">
-      <div class="container mx-auto py-24">
-        <div class="flex">
-          <div class="w-1/4">
+      <div class="container mx-auto px-4 lg:px-8 py-24">
+        <div class="flex flex-col md:flex-row md:flex-wrap">
+          <div class="w-full mb-8 md:mb-10 md:w-1/2 lg:w-1/4">
             <span class="inline-block text-white text-2xl font-serif mb-4">Navigatie</span>
             <ul>
               <li class="my-2">
@@ -59,7 +59,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-1/4">
+          <div class="w-full mb-8 md:mb-10 md:w-1/2 lg:w-1/4">
             <span class="inline-block text-white text-2xl font-serif mb-4">Laatste nieuws</span>
             <ul>
               <li class="my-2">
@@ -89,7 +89,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-1/4">
+          <div class="w-full mb-8 md:mb-0 md:w-1/2 lg:w-1/4">
             <span class="inline-block text-white text-2xl font-serif mb-4">Competitie</span>
             <ul>
               <li class="my-2">
@@ -136,7 +136,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-1/4">
+          <div class="w-full md:w-1/2 lg:w-1/4">
             <span class="inline-block text-white text-2xl font-serif mb-4">Locatie</span>
             <span class="block text-base font-sans text-white">Maria Montessorilaan 3</span>
             <span class="block text-base font-sans text-white">3312 KJ, Dordrecht</span>
@@ -155,14 +155,16 @@
         </div>
       </div>
       <div class="w-full bg-white">
-        <div class="container mx-auto">
-          <div class="flex">
-            <div class="w-1/3 h-16 flex items-center justify-start">
-              <span class="inline-block font-sans text-sm text-black">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/3 h-16 flex items-center justify-start">
+              <span class="block w-full text-center md:w-auto md:inline-block md:text-left
+              font-sans text-sm
+                text-black">
                 &copy; 2020 t.t.v. Merwestad
               </span>
             </div>
-            <div class="w-1/3 h-16 flex items-center justify-center">
+            <div class="w-full md:w-1/3 h-16 flex items-center justify-center">
               <a class="inline-block font-sans text-sm text-black px-3" href="#">
                 Disclaimer
               </a>

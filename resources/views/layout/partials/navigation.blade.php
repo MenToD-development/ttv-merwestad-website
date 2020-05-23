@@ -1,5 +1,5 @@
 <div class="fixed z-20 bg-white w-full h-16 shadow xl:h-20 xxl:h-24">
-  <div class="container px-4 w-full h-full flex items-center justify-between lg:px-8 xl:mx-auto">
+  <div class="container h-full flex items-center justify-between mx-auto px-4 lg:px-8">
     <a href="#" id="menu" class="inline-flex items-center h-10 px-4 rounded lg:hidden">
       <span class="fa fa-bars text-black text-xl"></span>
     </a>

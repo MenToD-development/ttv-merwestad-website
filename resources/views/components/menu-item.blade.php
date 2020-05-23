@@ -2,12 +2,12 @@
 <div {{ $attributes }}>
 
 @if ($active())
-  <a class="font-serif text-base text-primary-normal"
+  <a class="font-serif text-lg text-primary-normal"
      href="{{ route($routeName) }}">
     {{ $slot }}
   </a>
 @else
-  <a class="font-serif text-base text-black hover:text-primary-normal transition-colors
+  <a class="font-serif text-lg text-black hover:text-primary-normal transition-colors
             duration-75 ease-in-out"
      href="{{ route($routeName) }}">
     {{ $slot }}
