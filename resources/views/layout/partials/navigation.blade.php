@@ -1,4 +1,4 @@
-<div class="fixed bg-white w-full h-24 shadow-sm">
+<div class="fixed z-20 bg-white w-full h-24 shadow-sm">
   <div class="container mx-auto flex items-center justify-between h-full">
     <a class="inline-block" href="{{ route('home') }}">
       <span class="font-serif text-xl text-black">t.t.v.</span>
