@@ -40,6 +40,23 @@
     </div>
   </div>
 
+  <div class="bg-white w-full py-20">
+    <div class="container mx-auto">
+      <div class="w-full">
+        <div class="text-center mb-2">
+          <span class="bg-secondary-normal rounded py-2 px-4">
+            <span class="text-sm text-primary-normal font-bold font-sans">
+              Gezelligheid staat bovenaan
+            </span>
+          </span>
+        </div>
+        <span class="block text-center font-serif text-5xl text-black mb-6">
+          Wat zijn de mogelijkheden?
+        </span>
+      </div>
+    </div>
+  </div>
+
   <div class="bg-secondary-normal w-full py-32">
     <div class="container mx-auto flex items-stretch">
       <div class="w-full">
