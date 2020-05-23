@@ -50,9 +50,15 @@ class Post extends Resource
 
             BelongsTo::make('Auteur', 'author', User::class)
                 ->default(static function () {
-                    return auth()->user()->id;
+                    return auth()->user()->id ?? null;
                 })
-                ->readonly(),
+                ->readonly(static function () {
+                    if (!auth()->user()) {
+                        return false;
+                    }
+
+                    return !auth()->user()->isAdmin();
+                }),
 
             TextWithSlug::make('Titel', 'title')
                 ->required()
