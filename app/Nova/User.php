@@ -55,6 +55,9 @@ class User extends Resource
             Select::make('Type gebruiker', 'type')
                 ->options(static function () {
                     return config('merwestad.user_types');
+                })
+                ->default(static function () {
+                    return array_key_first(config('merwestad.user_types'));
                 }),
 
             Text::make('Email')
