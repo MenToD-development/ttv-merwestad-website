@@ -94,6 +94,11 @@
             <ul>
               <li class="my-2">
                 <a href="#" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
+                  Onderlinge competities
+                </a>
+              </li>
+              <li class="my-2">
+                <a href="#" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
                   Uitslagen
                 </a>
               </li>
