@@ -51,7 +51,9 @@ class Post extends Resource
 
             BelongsTo::make('Auteur', 'author', __CLASS__)
                 ->showOnIndex()
-                ->showOnDetail(),
+                ->showOnDetail()
+                ->hideWhenUpdating()
+                ->hideWhenCreating(),
 
             Hidden::make('user_id')
                 ->default(static function () {
