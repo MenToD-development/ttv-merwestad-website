@@ -142,9 +142,9 @@
         </div>
         <span class="block text-center font-serif text-5xl text-black mb-6">Laatste nieuws</span>
 
-        <div class="flex justify-start">
+        <div class="flex justify-end items-stretch">
           <div class="w-2/5 p-3">
-            <div class="bg-white w-full h-auto overflow-y-hidden p-6">
+            <div class="bg-white w-auto h-full overflow-y-hidden p-6 relative">
               <span class="inline-block bg-secondary-normal py-2 px-4 mb-2 rounded">
                 <span class="text-sm text-primary-normal font-bold font-sans">Uitgelicht nieuwsbericht</span>
               </span>
@@ -154,7 +154,7 @@
               <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-6">
                 Stefan de Jong - {{ \Illuminate\Support\Carbon::make('12-05-2020 21:15:06')->diffForHumans() }}
               </span>
-              <div class="h-64 overflow-y-hidden mb-6">
+              <div class="h-64 mb-6">
                 <p class="inline-block font-sans text-base text-black mb-4">
                   Ondanks dat het er voorlopig naar uit ziet dat we pas op 1 september
                   weer mogen beginnen, heb ik toch het verzoek gehad van de bond om de
@@ -186,14 +186,17 @@
                   moeilijk of niet mogelijk is.
                 </p>
               </div>
-              <a class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center justify-center px-4 rounded"
-                 href="#"
-                 title="Nieuwsbericht: Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020">
-                <i class="fas fa-arrow-alt-circle-right text-white text-lg mr-3"></i>
-                <span class="inline-block font-sans font-bold text-base text-white">Lees verder</span>
-              </a>
+              <div class="absolute bottom-0 left-0 w-full bg-white p-6">
+                <a class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center justify-center px-4 rounded"
+                   href="#"
+                   title="Nieuwsbericht: Gemeentelijke binnensportaccomodaties gesloten t/m 31-08-2020">
+                  <i class="fas fa-arrow-alt-circle-right text-white text-lg mr-3"></i>
+                  <span class="inline-block font-sans font-bold text-base text-white">Lees verder</span>
+                </a>
+              </div>
             </div>
           </div>
+
           <div class="w-3/5 p-3">
             <div class="bg-white p-6 w-full mb-6">
               <span class="text-black text-xl font-serif block">
@@ -235,6 +238,7 @@
             </div>
           </div>
         </div>
+
         <div class="flex justify-center mt-10">
           <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
              href="#"
