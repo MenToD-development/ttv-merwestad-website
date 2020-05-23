@@ -1,11 +1,15 @@
-<div class="fixed z-20 bg-white w-full h-24 shadow">
-  <div class="container mx-auto flex items-center justify-between h-full">
-    <a class="inline-block" href="{{ route('home') }}">
-      <span class="font-serif text-xl text-black">t.t.v.</span>
-      <span class="font-serif text-3xl text-primary-normal">Merwestad</span>
+<div class="fixed z-20 bg-white w-full h-16 shadow xl:h-20 xxl:h-24">
+  <div class="container px-4 w-full h-full flex items-center justify-between lg:px-8 xl:mx-auto">
+    <a href="#" id="menu" class="inline-flex items-center h-10 px-4 rounded lg:hidden">
+      <span class="fa fa-bars text-black text-xl"></span>
     </a>
 
-    <nav class="inline-flex flex-grow justify-end items-center h-full pr-16 ">
+    <a class="inline-block" href="{{ route('home') }}">
+      <span class="font-serif text-lg xl:text-xl text-black">t.t.v.</span>
+      <span class="font-serif text-xl xl:text-3xl text-primary-normal">Merwestad</span>
+    </a>
+
+    <nav class="hidden inline-flex flex-grow justify-end items-center h-full pr-16 lg:inline-flex">
       <div class="inline-flex justify-left items-center w-auto h-full">
         <x-menu-item class="mr-8" route-name="home">
           Home
@@ -31,9 +35,11 @@
       </div>
     </nav>
 
-    <a class="bg-primary-normal hover:bg-primary-hover mr-4 h-12 inline-flex items-center justify-center px-4 rounded" href="mailto:info@ttvmerwestad.nl">
-      <i class="fas fa-paper-plane text-white text-lg mr-3"></i>
-      <span class="inline-block font-sans font-bold text-lg text-white">Stuur ons een e-mail</span>
+    <a class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center
+    justify-center px-4 rounded" href="mailto:info@ttvmerwestad.nl">
+      <i class="fas fa-paper-plane text-white text-lg xl:mr-3"></i>
+      <span class="hidden xl:inline-block font-sans font-bold text-lg text-white">Stuur ons een
+        e-mail</span>
     </a>
   </div>
 </div>
