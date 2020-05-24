@@ -12,15 +12,15 @@
       <div class="w-full order-2 lg:order-1 lg:w-2/6 lg:pr-5">
         <h1 class="font-serif text-black leading-none mb-6">
           <span class="block text-2xl">Tafeltennisvereniging</span>
-          <span class="block text-5xl text-primary-normal">Merwestad</span>
+          <span class="block text-5xl xl:text-6xl text-primary-normal">Merwestad</span>
         </h1>
-        <p class="text-sans text-base text-black mb-4">
+        <p class="text-sans text-base md:text-lg text-black mb-4">
           Welkom op de website van tafeltennisvereniging Merwestad. Als vereniging staan wij voor
           gezelligheid. Onze gymzaal ligt aan de Admiraalsplein te Dordrecht genaamd
           <x-link href="https://www.dordtsport.nl/sportlocaties/sport-plus/"
                   target="_blank">Sport+</x-link>.
         </p>
-        <p class="text-sans text-base text-black mb-4">
+        <p class="text-sans text-base md:text-lg text-black mb-4">
           Deze website zal informatie verschaffen over
           <x-link href="{{ route('about') }}">onze vereniging</x-link>,
           <x-link href="{{ route('news') }}">nieuws</x-link>,
@@ -43,7 +43,7 @@
   </div>
 
   <!-- Mogelijkheden binnen Merwestad -->
-  <div class="bg-white w-full pt-8 md:pt-16 xl:pt-20 pb-15 md:pb-24 xl:pb-32">
+  <div class="bg-white w-full pb-16 md:pb-24 xl:pb-32">
     <div class="container mx-auto px-4 xl:px-8">
       <!-- intro -->
       <div class="w-full mb-10 xl:mb-16">
@@ -54,81 +54,85 @@
             </span>
           </span>
         </div>
-        <span class="block text-center font-serif text-3xl md:text-5xl text-black">
+        <span class="block text-center font-serif text-3xl md:text-4xl text-black">
           Wat zijn de mogelijkheden?
         </span>
       </div>
 
       <!-- mogelijkheden -->
       <div class="flex flex-col lg:flex-row lg:items-stretch">
-        <div class="w-full mb-12 lg:mb-0 lg:w-1/3">
+        <div class="w-full mb-20 lg:mb-0 lg:w-1/3">
           <div class="flex items-center justify-center mb-8">
             <div class="inline-block mr-6">
-              <span class="fas fa-smile-beam text-6xl text-primary-normal"></span>
+              <span class="fas fa-smile-beam text-5xl md:text-6xl text-primary-normal"></span>
             </div>
             <div class="inline-block">
-              <span class="font-serif text-2xl">Recreatief</span>
+              <span class="font-serif text-xl md:text-2xl">Recreatief</span>
             </div>
           </div>
           <div class="w-full px-6 text-center">
-            <p class="text-lg font-sans mb-8">
+            <p class="text-base md:text-lg font-sans mb-8">
               Binnen onze vereniging hebben wij een grote groep leden die alleen recreatief spelen.
               Hierbij rouleren we met elkaar en spelen we gewoon gezellig met elkaar op de vrije
               tafeltennis tafels. Kom een keer langs en kijk hoe je mee kan doen zonder enige
               ervaring.
             </p>
-            <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center
+            <a class="bg-primary-normal hover:bg-primary-hover h-10 md:h-12 inline-flex items-center
                 justify-center px-4 rounded" id="route" href="#">
-              <i class="fas fa-calendar-alt text-white text-2xl mr-3"></i>
-              <span class="inline-block font-sans font-bold text-lg text-white">Bekijk agenda</span>
+              <i class="fas fa-calendar-alt text-white text-xl md:text-2xl mr-3"></i>
+              <span class="inline-block font-sans font-bold text-base md:text-lg text-white">
+                Bekijk onze agenda
+              </span>
             </a>
           </div>
         </div>
-        <div class="w-full mb-12 lg:mb-0 lg:w-1/3">
+        <div class="w-full mb-20 lg:mb-0 lg:w-1/3">
           <div class="flex items-center justify-center mb-8">
             <div class="inline-block mr-6">
-              <span class="fas fa-calendar-check text-6xl text-primary-normal"></span>
+              <span class="fas fa-calendar-check text-5xl md:text-6xl text-primary-normal"></span>
             </div>
             <div class="inline-block">
-              <span class="font-serif text-2xl">Evenementen</span>
+              <span class="font-serif text-xl md:text-2xl">Evenementen</span>
             </div>
           </div>
           <div class="w-full px-6 text-center">
-            <p class="text-lg font-sans mb-8">
+            <p class="text-base md:text-lg font-sans mb-8">
               Elk half jaar organiseren we binnen onze vereniging een onderlinge competitie. Deze
               competitie duurt ongeveer 3 weken lang en wordt meestal gespeeld op de dinsdag
               avond. Deze onderlinge competities zijn altijd erg gezellig en een goede manier om
               iedereen te leren kennen.
             </p>
-            <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+            <a class="bg-primary-normal hover:bg-primary-hover h-10 md:h-12 inline-flex items-center
+            justify-center px-4 rounded"
                id="route" href="#">
-              <i class="fas fa-table-tennis text-white text-2xl mr-3"></i>
-              <span class="inline-block font-sans font-bold text-lg text-white">
+              <i class="fas fa-table-tennis text-white text-xl md:text-2xl mr-3"></i>
+              <span class="inline-block font-sans font-bold text-base md:text-lg text-white">
                 Lees meer
               </span>
             </a>
           </div>
         </div>
-        <div class="w-full mb-12 lg:mb-0 lg:w-1/3">
+        <div class="w-full lg:mb-0 lg:w-1/3">
           <div class="flex items-center justify-center mb-8">
             <div class="inline-block mr-6">
-              <span class="fas fa-fire text-6xl text-primary-normal"></span>
+              <span class="fas fa-fire text-5xl md:text-6xl text-primary-normal"></span>
             </div>
             <div class="inline-block">
-              <span class="font-serif text-2xl">Competitie</span>
+              <span class="font-serif text-xl md:text-2xl">Competitie</span>
             </div>
           </div>
           <div class="w-full px-6 text-center">
-            <p class="text-lg font-sans mb-8">
+            <p class="text-base md:text-lg font-sans mb-8">
               Wij hebben ook leden die graag het competitieve onderdeel in de sport willen
               beleven. Hiervoor doen ze mee aan de NTTB competitie afdeling West. Deze competitie
               wordt georganiseerd door de <x-link href="https://www.nttb.nl" target="_blank">
                 Nederlands tafeltennisbond</x-link>.
             </p>
-            <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
+            <a class="bg-primary-normal hover:bg-primary-hover h-10 md:h-12 inline-flex items-center
+            justify-center px-4 rounded"
                id="route" href="#">
-              <i class="fas fa-users text-white text-2xl mr-3"></i>
-              <span class="inline-block font-sans font-bold text-lg text-white">
+              <i class="fas fa-users text-white text-xl md:text-2xl mr-3"></i>
+              <span class="inline-block font-sans font-bold text-base md:text-lg text-white">
                 Bekijk onze teams
               </span>
             </a>
@@ -138,17 +142,17 @@
 
       <!-- Call-to-action -->
       <div class="flex justify-center mt-20 lg:mt-24 xl:mt-32">
-        <div class="w-full lg:w-2/3 bg-primary-normal rounded-lg shadow-xl">
+        <div class="w-full lg:w-3/4 xl:w-2/3 bg-primary-normal rounded-lg shadow-xl">
           <div class="py-8 px-10">
-            <div class="flex">
-              <div class="inline-block mr-10">
+            <div class="flex flex-col">
+              <div class="inline-block mr-10 mb-6">
                 <span class="fa fa-table-tennis text-white text-6xl mt-4"></span>
               </div>
               <div class="inline-block">
                 <span class="block text-3xl text-white font-serif mb-6">
                   Interesse gekregen?
                 </span>
-                <p class="block text-lg text-white font-sans">
+                <p class="block text-base md:text-lg text-white font-sans">
                   Heeft u interesse gekregen om lid te worden van de vereniging? Kijk in onze agenda
                   of neem contact met ons op en kom een keer vrijblijvend langs om kennis te
                   maken met onze vereniging.
@@ -158,8 +162,9 @@
                     hover:bg-secondary-normal hover:shadow active:shadow-inner"
                          href="#"
                          title="Bekijk onze agenda">
-                    <i class="fas fa-calendar text-primary-normal text-lg mr-3"></i>
-                    <span class="inline-block font-sans font-bold text-lg text-primary-normal">
+                    <i class="fas fa-calendar text-primary-normal text-lg mr-0 md:mr-3"></i>
+                    <span class="hidden md:inline-block font-sans font-bold text-lg
+                    text-primary-normal">
                       Bekijk onze agenda
                     </span>
                   </a>
@@ -170,8 +175,9 @@
                     hover:bg-secondary-normal hover:shadow active:shadow-inner"
                      href="#"
                      title="Bekijk onze agenda">
-                    <i class="fas fa-paper-plane text-primary-normal text-lg mr-3"></i>
-                    <span class="inline-block font-sans font-bold text-lg text-primary-normal">
+                    <i class="fas fa-paper-plane text-primary-normal text-lg mr-0 md:mr-3"></i>
+                    <span class="hidden md:inline-block font-sans font-bold text-lg
+                    text-primary-normal">
                       Neem contact met ons op
                     </span>
                   </a>
