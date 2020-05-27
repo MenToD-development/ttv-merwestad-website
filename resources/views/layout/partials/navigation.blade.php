@@ -11,22 +11,22 @@
 
     <nav class="hidden inline-flex flex-grow justify-end items-center h-full pr-16 lg:inline-flex">
       <div class="inline-flex justify-left items-center w-auto h-full">
-        <x-menu-item class="mr-8" route-name="home">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="home">
           Home
         </x-menu-item>
-        <x-menu-item class="mr-8" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
           Vereniging
         </x-menu-item>
-        <x-menu-item class="mr-8" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
           Lid worden?
         </x-menu-item>
-        <x-menu-item class="mr-8" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
           Competitie
         </x-menu-item>
-        <x-menu-item class="mr-8" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
           Agenda
         </x-menu-item>
-        <x-menu-item class="mr-8" route-name="news">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="news">
           Nieuws
         </x-menu-item>
         <x-menu-item route-name="news">
@@ -35,11 +35,12 @@
       </div>
     </nav>
 
-    <a class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center
-    justify-center px-4 rounded" href="mailto:info@ttvmerwestad.nl">
-      <i class="fas fa-paper-plane text-white text-lg xl:mr-3"></i>
-      <span class="hidden xl:inline-block font-sans font-bold text-lg text-white">Stuur ons een
-        e-mail</span>
+    <a class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center justify-center px-4 rounded mr-2"
+       id="route" href="#">
+      <i class="fas fa-user-circle text-white text-xl xl:text-2xl mr-0 lg:mr-3"></i>
+      <span class="hidden lg:inline-block font-sans font-bold text-base xl:text-lg text-white">
+        Mijn account
+      </span>
     </a>
   </div>
 </div>

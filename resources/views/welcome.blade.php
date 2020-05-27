@@ -26,13 +26,23 @@
           <x-link href="{{ route('news') }}">nieuws</x-link>,
           evenementen, competitie wedstrijden & teams, contactgegevens en nog veel meer.
         </p>
-        <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded"
-           id="route" href="#">
-          <i class="fas fa-route text-white text-2xl mr-3"></i>
-          <span class="hidden inline-block font-sans font-bold text-lg text-white">Rij naar t.t.v.
-            Merwestad</span>
-          <span class="inline-block font-sans font-bold text-lg text-white">Route</span>
-        </a>
+        <div class="flex items-center">
+          <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded mr-2"
+             id="route" href="#">
+            <i class="fas fa-route text-white text-2xl mr-3"></i>
+            <span class="hidden md:inline-block lg:hidden font-sans font-bold text-lg text-white">
+              Rij naar t.t.v. Merwestad
+            </span>
+            <span class="inline-block md:hidden lg:inline-block font-sans font-bold text-lg text-white">Route</span>
+          </a>
+          <a class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded" href="mailto:info@ttvmerwestad.nl">
+            <i class="fas fa-paper-plane text-white text-2xl mr-3"></i>
+            <span class="hidden md:inline-block lg:hidden font-sans font-bold text-lg text-white">
+              Stuur ons een e-mail
+            </span>
+            <span class="inline-block md:hidden lg:inline-block font-sans font-bold text-lg text-white">E-mail</span>
+          </a>
+        </div>
       </div>
       <div class="w-full order-1 mb-6 md:mb-12 lg:order-2 lg:w-4/6 lg:pl-5">
         <div class="w-full h-full overflow-hidden rounded-lg">
