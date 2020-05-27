@@ -330,14 +330,14 @@
         </span>
       </div>
       <div class="flex flex-col lg:flex-row lg:justify-start lg:items-stretch w-full mb-16">
-        <div class="w-full lg:w-2/3 py-4 px-6">
+        <div class="w-full lg:w-2/3 py-4 px-3 lg:px-6">
           <div class="flex items-center mb-8">
-            <span class="inline-block text-6xl fa fa-medal mr-6"></span>
+            <span class="inline-block text-5xl md:text-6xl fa fa-medal mr-6"></span>
             <div class="inline-block">
-              <span class="block text-xl font-serif">
+              <span class="block text-lg md:text-xl font-serif">
                 Onze hoofdsponsor
               </span>
-              <span class="text-3xl text-primary-normal text-black font-serif">
+              <span class="text-2xl md:text-3xl text-primary-normal text-black font-serif">
                 R.V. Bouw- en Timmerbedrijf
               </span>
             </div>
@@ -353,20 +353,20 @@
             tevreden klanten geholpen in o.a. Dordrecht, Zwijndrecht, Papendrecht, Sliedrecht en
             omstreken.
           </p>
-          <a class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center
+          <a class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center
               justify-center px-4 rounded"
              href="http://www.rvbouwbedrijf.nl" target="_blank"
              title="Aannemer Dordrecht - Aannemersbedrijf, Bouwbedrijf & Timmerbedrijf">
             <i class="fas fa-external-link-alt text-white text-lg mr-3"></i>
-            <span class="inline-block font-sans font-bold text-base text-white">
+            <span class="inline-block font-sans font-bold text-base xl:text-lg text-white">
               Ga naar de website
             </span>
           </a>
         </div>
-        <div class="w-full lg:w-1/3 py-4 px-6 flex items-end">
+        <div class="w-full lg:w-1/3 mt-16 lg:mt-0 py-4 px-0 lg:px-6 flex justify-center items-end">
           <div class="bg-primary-normal rounded">
             <div class="py-8 px-10">
-              <span class="block text-white font-serif text-4xl mb-12">
+              <span class="block text-white font-serif text-3xl md:text-4xl mb-12">
                 Wilt u ons ook sponsoren?
               </span>
               <a class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
@@ -386,445 +386,248 @@
   </div>
 
   <!-- Competitie overzicht -->
-{{--  <div class="bg-secondary-normal w-full py-32">--}}
-{{--    <div class="container mx-auto">--}}
-{{--      <div class="w-full text-center mb-10">--}}
-{{--        <div class="inline-block bg-white rounded shadow py-2 px-4">--}}
-{{--          <span class="text-sm text-primary-normal font-bold font-sans">--}}
-{{--            Wie staat er deze keer bovenaan?--}}
-{{--          </span>--}}
-{{--        </div>--}}
-{{--        <h2 class="block font-serif text-5xl text-black mb-6">--}}
-{{--          Competitie overzicht--}}
-{{--        </h2>--}}
-{{--      </div>--}}
-{{--      <div class="flex items-stretch justify-start">--}}
-{{--        <div class="w-1/3 pr-8">--}}
-{{--          <h3 class="text-black text-xl font-serif block mb-6">--}}
-{{--            Top 10 [Competitie naam]--}}
-{{--          </h3>--}}
-{{--          <p class="block text-black text-base font-sans mb-6">--}}
-{{--            Een top 10 van onze leden aan de hand van hun gewonnen wedstrijden.--}}
-{{--          <p>--}}
-{{--          <ol>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded--}}
-{{--                shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  1.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Gert-Jan Vervoorn--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  88%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  2.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Lenny Klarenaar--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  83%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  3.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Stefan de Jong--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  70%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  4.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Maurice de Jager--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  63%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  5.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Theun Evers--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  60%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  6.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Sandor Lelkes--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  50%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  7.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Rob Tempelaar--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  42%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  8.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Ruud Bakker--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  42%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  9.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Menno Tempelaar--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  38%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--            <li class="block flex justify-between items-center py-4 px-6 mb-2 bg-white rounded shadow">--}}
-{{--              <div>--}}
-{{--                <span class="inline-block w-5 text-base text-black font-sans font-bold mr-2">--}}
-{{--                  10.--}}
-{{--                </span>--}}
-{{--                <span class="text-lg text-black font-sans">--}}
-{{--                  Hans van de Laars--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--              <div class="bg-primary-normal py-1 px-4 rounded-full shadow-inner">--}}
-{{--                <span class="text-base text-white font-sans font-bold">--}}
-{{--                  33%--}}
-{{--                </span>--}}
-{{--              </div>--}}
-{{--            </li>--}}
-{{--          </ol>--}}
-{{--        </div>--}}
+  <div class="bg-secondary-normal w-full py-16 md:py-24 xl:py-32">
+    <div class="container mx-auto px-4 xl:px-8">
+      <div class="w-full text-center mb-10 xl:mb-16">
+        <div class="mb-2">
+          <x-intro-label bg="secondary">
+            Wie staat er deze keer bovenaan?
+          </x-intro-label>
+        </div>
+        <h2 class="block font-serif text-3xl md:text-4xl text-black">
+          Competitie overzicht
+        </h2>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch justify-start">
+        <div class="w-full lg:w-1/3 mb-10 lg:mb-0 px-3 lg:pl-0 lg:pr-8">
+          <h3 class="text-black text-lg lg:text-xl xxl:text-2xl font-serif block mb-6">
+            Top 10 [Competitie naam]
+          </h3>
+          <p class="block text-black text-base font-sans mb-6">
+            Een top 10 van onze leden aan de hand van hun gewonnen wedstrijden.
+          <p>
+          <div>
+            <x-top-10-item :number="1" :percentage="88">
+              Gert-Jan Vervoorn
+            </x-top-10-item>
+            <x-top-10-item :number="2" :percentage="83">
+              Lenny Klarenaar
+            </x-top-10-item>
+            <x-top-10-item :number="3" :percentage="70">
+              Stefan de Jong
+            </x-top-10-item>
+            <x-top-10-item :number="4" :percentage="63">
+              Maurice de Jager
+            </x-top-10-item>
+            <x-top-10-item :number="5" :percentage="60">
+              Theun Evers
+            </x-top-10-item>
+            <x-top-10-item :number="6" :percentage="50">
+              Sandor Lelkes
+            </x-top-10-item>
+            <x-top-10-item :number="7" :percentage="42">
+              Rob Tempelaar
+            </x-top-10-item>
+            <x-top-10-item :number="8" :percentage="42">
+              Ruud Bakker
+            </x-top-10-item>
+            <x-top-10-item :number="9" :percentage="38">
+              Menno Tempelaar
+            </x-top-10-item>
+            <x-top-10-item :number="10" :percentage="33">
+              Hans van de Laars
+            </x-top-10-item>
+          </div>
+        </div>
 
-{{--        <div class="w-2/3 pl-8">--}}
+        <div class="w-full lg:w-2/3 px-3 lg:pr-0 lg:pl-8">
 
-{{--          <div class="mb-8">--}}
-{{--            <span class="inline-block text-black font-serif text-xl mb-6">--}}
-{{--              Uitslagen op {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat--}}
-{{--              ('l j F Y')) }}--}}
-{{--            </span>--}}
-{{--            <div>--}}
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Sorry 1 - MTTV 3--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    2 - 8--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+          <div class="mb-8">
+            <span class="inline-block text-black font-serif text-xl xxl:text-2xl mb-6">
+              Uitslagen op {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat
+              ('l j F Y')) }}
+            </span>
+            <div>
+              <x-match-result class="mb-2">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Sorry 1 - MTTV 3
+                </x-slot>
+                <x-slot name="result">
+                  2 - 8
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    HTV 2 - Nileta 1--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    0 - 5--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+              <x-match-result class="mb-2">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  HTV 2 - Nileta 1
+                </x-slot>
+                <x-slot name="result">
+                  0 - 5
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center pl-4 pr-6 py-4 rounded--}}
-{{--              shadow mb-2 border-l-8 border-primary-normal border-solid">--}}
-{{--                <div class="">--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Merwestad 3 - Trefpunt 5--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    1 - 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+              <x-match-result class="mb-2" :merwestad="true">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Merwestad 3 - Trefpunt 5
+                </x-slot>
+                <x-slot name="result">
+                  1 - 4
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Nileta 2 - Dordrecht 12--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    4 - 1--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+              <x-match-result class="mb-2">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Nileta 2 - Dordrecht 12
+                </x-slot>
+                <x-slot name="result">
+                  4 - 1
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    DFC 2 - Gorkum 5--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    1 - 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+              <x-match-result class="mb-2">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  DFC 2 - Gorkum 5
+                </x-slot>
+                <x-slot name="result">
+                  1 - 4
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center px-4 py-4 rounded shadow--}}
-{{--                  border-l-8 border-primary-normal border-solid">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Lekpongers 1 - Merwestad 2--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    1 - 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-{{--            </div>--}}
-{{--          </div>--}}
+              <x-match-result :merwestad="true">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Lekpongers 1 - Merwestad 2
+                </x-slot>
+                <x-slot name="result">
+                  1 - 4
+                </x-slot>
+              </x-match-result>
+            </div>
+          </div>
 
-{{--          <div class="mb-8">--}}
-{{--            <span class="block text-black font-serif text-xl mb-6">--}}
-{{--              {{ ucfirst(\Carbon\Carbon::make('09-03-2020')->translatedFormat--}}
-{{--              ('l j F Y')) }}--}}
-{{--            </span>--}}
-{{--            <div>--}}
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('09-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    VVV 10 - De Repelaer 5--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    0 - 5--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-{{--            </div>--}}
-{{--          </div>--}}
+          <div class="mb-8">
+            <span class="block text-black font-serif text-xl mb-6">
+              {{ ucfirst(\Carbon\Carbon::make('09-03-2020')->translatedFormat
+              ('l j F Y')) }}
+            </span>
+            <div>
+              <x-match-result>
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('09-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  VVV 10 - De Repelaer 5
+                </x-slot>
+                <x-slot name="result">
+                  0 - 5
+                </x-slot>
+              </x-match-result>
+            </div>
+          </div>
 
-{{--          <div class="mb-8">--}}
-{{--            <span class="block text-black font-serif text-xl mb-6">--}}
-{{--              {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat--}}
-{{--              ('l j F Y')) }}--}}
-{{--            </span>--}}
-{{--            <div>--}}
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    MTTV 3 - Papendrecht 10--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    8 - 2--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+          <div class="mb-8">
+            <span class="block text-black font-serif text-xl mb-6">
+              {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat
+              ('l j F Y')) }}
+            </span>
+            <div>
+              <x-match-result class="mb-2">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  MTTV 3 - Papendrecht 10
+                </x-slot>
+                <x-slot name="result">
+                  8 - 2
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Gorkum 5 - Dordrecht 12--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    4 - 1--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-{{--            </div>--}}
-{{--          </div>--}}
+              <x-match-result>
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Gorkum 5 - Dordrecht 12
+                </x-slot>
+                <x-slot name="result">
+                  4 - 1
+                </x-slot>
+              </x-match-result>
+            </div>
+          </div>
 
-{{--          <div class="mb-8">--}}
-{{--            <span class="block text-black font-serif text-xl mb-6">--}}
-{{--              {{ ucfirst(\Carbon\Carbon::make('05-03-2020')->translatedFormat--}}
-{{--              ('l j F Y')) }}--}}
-{{--            </span>--}}
-{{--            <div>--}}
-{{--              <div class="bg-white flex justify-between items-center px-4 py-4 rounded shadow--}}
-{{--                  border-l-8 border-primary-normal border-solid">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Merwestad 1 - Tavernie 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    1 - 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-{{--            </div>--}}
-{{--          </div>--}}
+          <div class="mb-8">
+            <span class="block text-black font-serif text-xl mb-6">
+              {{ ucfirst(\Carbon\Carbon::make('05-03-2020')->translatedFormat
+              ('l j F Y')) }}
+            </span>
+            <div>
+              <x-match-result :merwestad="true">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('05-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Merwestad 1 - Tavernie 4
+                </x-slot>
+                <x-slot name="result">
+                  1 - 4
+                </x-slot>
+              </x-match-result>
+            </div>
+          </div>
 
-{{--          <div class="mb-8">--}}
-{{--            <span class="block text-black font-serif text-xl mb-6">--}}
-{{--              {{ ucfirst(\Carbon\Carbon::make('04-03-2020')->translatedFormat--}}
-{{--              ('l j F Y')) }}--}}
-{{--            </span>--}}
-{{--            <div>--}}
-{{--              <div class="bg-white flex justify-between items-center px-4 py-4 rounded shadow--}}
-{{--                  border-l-8 border-primary-normal border-solid mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('10-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    VCS 3 - Merwestad 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    4 - 6--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
+          <div class="mb-8">
+            <span class="block text-black font-serif text-xl mb-6">
+              {{ ucfirst(\Carbon\Carbon::make('04-03-2020')->translatedFormat
+              ('l j F Y')) }}
+            </span>
+            <div>
+              <x-match-result class="mb-2" :merwestad="true">
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('04-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  VCS 3 - Merwestad 4
+                </x-slot>
+                <x-slot name="result">
+                  4 - 6
+                </x-slot>
+              </x-match-result>
 
-{{--              <div class="bg-white flex justify-between items-center px-6 py-4 rounded shadow mb-2">--}}
-{{--                <div>--}}
-{{--                  <span class="block text-primary-normal text-opacity-75 text-sm font-sans mb-2">--}}
-{{--                    Gespeeld op--}}
-{{--                    {{ ucfirst(\Carbon\Carbon::make('06-03-2020')->translatedFormat('l j F Y')) }}--}}
-{{--                    (wedstrijdnummer)--}}
-{{--                  </span>--}}
-{{--                  <span class="block text-black text-lg font-sans font-bold">--}}
-{{--                    Serve 71 4 - VVV 10--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--                <div class="inline-block bg-primary-normal px-4 py-2 rounded shadow-inner">--}}
-{{--                  <span class="text-lg text-white font-sans font-bold">--}}
-{{--                    1 - 4--}}
-{{--                  </span>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-{{--            </div>--}}
-{{--          </div>--}}
+              <x-match-result>
+                <x-slot name="date">
+                  {{ ucfirst(\Carbon\Carbon::make('04-03-2020')->translatedFormat('l j F Y')) }}
+                </x-slot>
+                <x-slot name="teams">
+                  Serve 71 4 - VVV 10
+                </x-slot>
+                <x-slot name="result">
+                  1 - 4
+                </x-slot>
+              </x-match-result>
+            </div>
+          </div>
 
-{{--        </div>--}}
-{{--      </div>--}}
-{{--    </div>--}}
-{{--  </div>--}}
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
