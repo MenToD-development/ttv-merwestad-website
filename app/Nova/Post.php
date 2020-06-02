@@ -38,6 +38,22 @@ class Post extends Resource
     ];
 
     /**
+     * @return string
+     */
+    public static function label()
+    {
+        return 'Nieuwsberichten';
+    }
+
+    /**
+     * @return string
+     */
+    public static function singularLabel()
+    {
+        return 'Nieuwsbericht';
+    }
+
+    /**
      * Get the fields displayed by the resource.
      *
      * @param Request $request

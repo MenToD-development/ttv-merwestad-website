@@ -36,6 +36,22 @@ class User extends Resource
     ];
 
     /**
+     * @return string
+     */
+    public static function label()
+    {
+        return 'Gebruikers';
+    }
+
+    /**
+     * @return string
+     */
+    public static function singularLabel()
+    {
+        return 'Gebruiker';
+    }
+
+    /**
      * Get the fields displayed by the resource.
      *
      * @param Request $request
