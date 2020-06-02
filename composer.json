@@ -16,6 +16,7 @@
     "require": {
         "php": "^7.2.5",
         "benjaminhirsch/nova-slug-field": "^1.2",
+        "coderello/laravel-nova-lang": "^1.4",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",

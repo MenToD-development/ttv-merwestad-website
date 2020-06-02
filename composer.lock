@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5026214b7523845b14ef8c51568e4a5",
+    "content-hash": "39e88d2483898344a899d5f5011cea67",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -253,6 +253,51 @@
                 "time"
             ],
             "time": "2020-04-21T14:14:05+00:00"
+        },
+        {
+            "name": "coderello/laravel-nova-lang",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coderello/laravel-nova-lang.git",
+                "reference": "4760cf1e7437ba9ca0112661af11208f59e5f39c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coderello/laravel-nova-lang/zipball/4760cf1e7437ba9ca0112661af11208f59e5f39c",
+                "reference": "4760cf1e7437ba9ca0112661af11208f59e5f39c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Coderello\\LaravelNovaLang\\Providers\\LaravelNovaLangServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coderello\\LaravelNovaLang\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Language support for Laravel Nova.",
+            "keywords": [
+                "lang",
+                "language",
+                "laravel",
+                "nova",
+                "support"
+            ],
+            "time": "2020-04-19T11:20:08+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
