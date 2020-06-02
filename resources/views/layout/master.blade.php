@@ -16,7 +16,9 @@
       @yield('content')
     </div>
 
-    <aside class="menu"></aside>
+    <aside class="menu">
+      @include('layout.partials.mobile-menu')
+    </aside>
 
     <footer class="w-full bg-primary-normal">
       <div class="container mx-auto px-4 lg:px-8 py-24">

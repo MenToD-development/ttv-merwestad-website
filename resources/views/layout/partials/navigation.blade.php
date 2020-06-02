@@ -2,7 +2,8 @@
   <div class="container h-full flex items-center justify-between mx-auto px-4 lg:px-8">
     <a href="#" id="menu" class="inline-flex items-center h-10 px-4 rounded lg:hidden"
        @click="menu = !menu">
-      <span class="fa fa-bars text-black text-xl"></span>
+      <span class="block fa fa-bars text-black text-xl"></span>
+      <span class="hidden fa fa-times text-black text-xl"></span>
     </a>
 
     <a class="inline-block" href="{{ route('home') }}">
