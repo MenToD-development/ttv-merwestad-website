@@ -1,6 +1,7 @@
 <div class="fixed z-20 bg-white w-full h-16 shadow xl:h-20 xxl:h-24">
   <div class="container h-full flex items-center justify-between mx-auto px-4 lg:px-8">
-    <a href="#" id="menu" class="inline-flex items-center h-10 px-4 rounded lg:hidden">
+    <a href="#" id="menu" class="inline-flex items-center h-10 px-4 rounded lg:hidden"
+       @click="menu = !menu">
       <span class="fa fa-bars text-black text-xl"></span>
     </a>
 
@@ -36,7 +37,7 @@
     </nav>
 
     <a class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center justify-center px-4 rounded mr-2"
-       id="route" href="#">
+       href="#">
       <i class="fas fa-user-circle text-white text-xl xl:text-2xl mr-0 lg:mr-3"></i>
       <span class="hidden lg:inline-block font-sans font-bold text-base xl:text-lg text-white">
         Mijn account

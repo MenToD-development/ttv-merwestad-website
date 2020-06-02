@@ -9,12 +9,14 @@
   <link href="{{ mix('/css/app.css') }}" type="text/css" rel="stylesheet">
 </head>
 <body>
-  <div id="website" class="relative flex flex-col bg-white min-w-full min-h-screen">
+  <div id="website" :class="appClasses">
     @include('layout.partials.navigation')
 
     <div class="flex-grow bg-white pt-16 xl:pt-20 xxl:pt-24">
       @yield('content')
     </div>
+
+    <aside class="menu"></aside>
 
     <footer class="w-full bg-primary-normal">
       <div class="container mx-auto px-4 lg:px-8 py-24">

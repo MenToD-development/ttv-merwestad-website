@@ -1,5 +1,4 @@
 import Vue from "vue";
-import Parallax from 'vue-parallaxy';
 
 require('./bootstrap');
 
@@ -23,7 +22,23 @@ window.addEventListener('load', (e) => {
 
 const app = new Vue({
   el: '#website',
-  components: {
-    Parallax
+  data: {
+    menu: false
+  },
+
+  computed: {
+    appClasses() {
+      return {
+        'relative': true,
+        'flex': true,
+        'flex-col': true,
+        'bg-white': true,
+        'min-w-full': true,
+        'min-h-screen': true,
+        'show-menu': this.menu
+      }
+    }
   }
-});
+})
+
+
