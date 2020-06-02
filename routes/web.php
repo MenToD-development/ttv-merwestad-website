@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/over-de-vereniging', function () {
+Route::get('/vereniging', function () {
     return view('about');
-})->name('about');
+})->name('vereniging');
 
 Route::get('/nieuws', function () {
     return view('news');

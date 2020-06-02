@@ -2,9 +2,9 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use App\User;
 
 /**
  * Class Post
@@ -14,6 +14,9 @@ use App\User;
  * @author   Menno Tempelaar <webmaster@ttvmerwestad.nl>
  * @license  MIT
  * @link
+ *
+ * @method Builder featured() Selects all featured posts
+ * @method Builder latest() Selects all latest posts.
  */
 class Post extends Model
 {
@@ -29,10 +32,27 @@ class Post extends Model
     ];
 
     /**
-     * @return BelongsTo
+     * @var string[]
+     */
+    public $casts = [
+        'featured' => 'boolean'
+    ];
+
+    /**
+     * @return BelongsTo the author of the post.
      */
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+
+    /**
+     * @param Builder $query the query builder
+     * @return Builder the query builder
+     */
+    public function scopeFeatured(Builder $query): Builder
+    {
+        return $query->where('featured', true);
+    }
+
 }

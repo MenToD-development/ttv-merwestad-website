@@ -24,6 +24,8 @@ class CreatePostsTable extends Migration
 
             $table->string('title');
             $table->string('slug');
+            $table->boolean('featured')
+                ->default(false);
 
             $table->string('main_image')
                 ->nullable();

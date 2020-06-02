@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Actions\FeaturePost;
 use Benjaminhirsch\NovaSlugField\Slug;
 use Benjaminhirsch\NovaSlugField\TextWithSlug;
 use Illuminate\Http\Request;
@@ -142,6 +143,9 @@ class Post extends Resource
      */
     public function actions(Request $request)
     {
-        return [];
+        return [
+            FeaturePost::make()
+                ->showOnTableRow()
+        ];
     }
 }
