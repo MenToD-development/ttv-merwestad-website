@@ -22,8 +22,8 @@
         </p>
         <p class="text-sans text-base md:text-lg text-black mb-4">
           Deze website zal informatie verschaffen over
-          <x-link href="{{ route('about') }}">onze vereniging</x-link>,
-          <x-link href="{{ route('news') }}">nieuws</x-link>,
+          <x-link href="{{ route('vereniging') }}">onze vereniging</x-link>,
+          <x-link href="{{ route('nieuws') }}">nieuws</x-link>,
           evenementen, competitie wedstrijden & teams, contactgegevens en nog veel meer.
         </p>
         <div class="flex items-center">

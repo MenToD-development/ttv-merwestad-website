@@ -6,27 +6,27 @@
           Home
         </span>
       </a>
-      <a href="{{ route('about') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
+      <a href="{{ route('vereniging') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
         <span class="font-serif text-lg text-white">
           Vereniging
         </span>
       </a>
-      <a href="{{ route('about') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
+      <a href="{{ route('lid-worden') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
         <span class="font-serif text-lg text-white">
           Lid worden?
         </span>
       </a>
-      <a href="{{ route('about') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
+      <a href="{{ route('competitie') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
         <span class="font-serif text-lg text-white">
           Competitie
         </span>
       </a>
-      <a href="{{ route('news') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
+      <a href="{{ route('agenda') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
         <span class="font-serif text-lg text-white">
           Agenda
         </span>
       </a>
-      <a href="{{ route('news') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
+      <a href="{{ route('nieuws') }}" class="block border-b border-white py-2 px-4 mb-1 mt-1 rounded">
         <span class="font-serif text-lg text-white">
           Nieuws
         </span>

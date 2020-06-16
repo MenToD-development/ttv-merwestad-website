@@ -16,22 +16,22 @@
         <x-menu-item class="mr-4 xl:mr-6" route-name="home">
           Home
         </x-menu-item>
-        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="vereniging">
           Vereniging
         </x-menu-item>
-        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="lid-worden">
           Lid worden?
         </x-menu-item>
-        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="competitie">
           Competitie
         </x-menu-item>
-        <x-menu-item class="mr-4 xl:mr-6" route-name="about">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="agenda">
           Agenda
         </x-menu-item>
-        <x-menu-item class="mr-4 xl:mr-6" route-name="news">
+        <x-menu-item class="mr-4 xl:mr-6" route-name="nieuws">
           Nieuws
         </x-menu-item>
-        <x-menu-item route-name="news">
+        <x-menu-item route-name="contact">
           Contact
         </x-menu-item>
       </div>

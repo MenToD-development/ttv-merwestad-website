@@ -13,18 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('', function () {
+    return view('home');
 })->name('home');
 
-Route::get('/vereniging', function () {
-    return view('about');
+Route::get('vereniging', function () {
+    return view('vereniging');
 })->name('vereniging');
 
-Route::get('/nieuws', function () {
-    return view('news');
-})->name('news');
+Route::get('lid-worden', function () {
+    return view('lid-worden');
+})->name('lid-worden');
 
-Route::get('/contact', function () {
+Route::get('competitie', function () {
+    return view('competitie');
+})->name('competitie');
+
+Route::get('agenda', function () {
+    return view('agenda');
+})->name('agenda');
+
+Route::get('nieuws', function () {
+    return view('nieuws');
+})->name('nieuws');
+
+Route::get('contact', function () {
     return view('contact');
 })->name('contact');
