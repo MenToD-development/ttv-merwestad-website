@@ -3,11 +3,12 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BooleanGroup;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Line;
 use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Stack;
 use Laravel\Nova\Fields\Text;
 
 class User extends Resource
@@ -48,15 +49,24 @@ class User extends Resource
 
             Gravatar::make()->maxWidth(50),
 
+            Stack::make('Gebruiker', [
+                Line::make('name')
+                    ->asHeading(),
+                Line::make('email')
+                    ->asBase()
+            ]),
+
             Text::make('Naam', 'name')
                 ->sortable()
-                ->rules('required', 'max:255'),
+                ->rules('required', 'max:255')
+                ->onlyOnForms(),
 
             Text::make('E-mailadres', 'email')
                 ->sortable()
                 ->rules('required', 'email', 'max:254')
                 ->creationRules('unique:users,email')
-                ->updateRules('unique:users,email,{{resourceId}}'),
+                ->updateRules('unique:users,email,{{resourceId}}')
+                ->onlyOnForms(),
 
             Password::make('Wachtwoord', 'Password')
                 ->onlyOnForms()
@@ -69,6 +79,7 @@ class User extends Resource
                     \App\User::TYPE_AUTHOR => 'Schrijver, kan inloggen in Nova en content toevoegen.',
                     \App\User::TYPE_ADMIN => 'Administrator, heeft alle mogelijkheden.'
                 ])
+                ->displayUsingLabels()
         ];
     }
 
