@@ -6,7 +6,8 @@ use App\User;
 class UserSeeder extends Seeder
 {
     protected function administrator(): void
-    {        $user = new User();
+    {
+        $user = new User();
         $user->fill([
             'name' => 'admin',
             'email' => 'admin@ttvmerwestad.nl',
