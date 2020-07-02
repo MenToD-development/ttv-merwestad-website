@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -10,13 +9,17 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    const TYPE_USER = 'user';
+    const TYPE_AUTHOR = 'author';
+    const TYPE_ADMIN = 'admin';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'type'
     ];
 
     /**
@@ -36,4 +39,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function accessToNova(): bool
+    {
+        return in_array($this->type, [
+            self::TYPE_AUTHOR, self::TYPE_ADMIN
+        ]);
+    }
 }
