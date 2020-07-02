@@ -46,4 +46,9 @@ class User extends Authenticatable
             self::TYPE_AUTHOR, self::TYPE_ADMIN
         ]);
     }
+
+    public function isAdmin(): bool
+    {
+        return $this->type === self::TYPE_ADMIN;
+    }
 }
