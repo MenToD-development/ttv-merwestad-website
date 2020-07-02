@@ -22,6 +22,7 @@ class CreatePagesTable extends Migration
             $table->string('title');
 
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::table('pages', function (Blueprint $table) {
