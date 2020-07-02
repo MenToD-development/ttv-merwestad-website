@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Heading;
 use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Line;
@@ -66,6 +67,10 @@ class Page extends Resource
                 ->required()
                 ->help('Hiermee wordt de pagina aangeduid. Deze naam zal ook '
                     . 'in het menu verschijnen.'),
+
+            Heading::make('Meta gegevens')
+                ->help('Dit zijn gegevens die mogelijk niet te zien zijn op de website'
+                    . ' maar worden gebruikt door Google of andere social media.'),
 
             Text::make('Pagina titel', 'title')
                 ->required()
