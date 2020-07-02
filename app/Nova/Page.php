@@ -3,7 +3,11 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Line;
+use Laravel\Nova\Fields\Stack;
+use Laravel\Nova\Fields\Text;
 
 class Page extends Resource
 {
@@ -19,7 +23,7 @@ class Page extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -27,26 +31,54 @@ class Page extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id', 'name', 'title'
     ];
+
+    /**
+     * @var string
+     */
+    public static $group = 'Website';
 
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return array
      */
     public function fields(Request $request)
     {
         return [
             ID::make()->sortable(),
+
+            Stack::make('Pagina', [
+                Line::make('title')
+                    ->asHeading(),
+                Line::make('name')
+                    ->asBase()
+            ]),
+
+            Hidden::make('author')
+                ->default(function () {
+                    return auth()->user()->id;
+                }),
+
+            Text::make('Pagina naam', 'name')
+                ->required()
+                ->help('Hiermee wordt de pagina aangeduid. Deze naam zal ook '
+                    . 'in het menu verschijnen.'),
+
+            Text::make('Pagina titel', 'title')
+                ->required()
+                ->help('Dit is de alles omschrijven titel waarmee de pagina '
+                    . 'wordt omschreven. Deze titel wordt ook als google resultaat '
+                    . 'weergeven.')
         ];
     }
 
     /**
      * Get the cards available for the request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return array
      */
     public function cards(Request $request)
@@ -57,7 +89,7 @@ class Page extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return array
      */
     public function filters(Request $request)
@@ -68,7 +100,7 @@ class Page extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return array
      */
     public function lenses(Request $request)
@@ -79,11 +111,27 @@ class Page extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return array
      */
     public function actions(Request $request)
     {
         return [];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function label(): string
+    {
+        return 'Pagina\'s';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function singularLabel(): string
+    {
+        return 'Pagina';
     }
 }
