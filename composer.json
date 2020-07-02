@@ -16,6 +16,7 @@
     "require": {
         "php": "^7.2.5",
         "coderello/laravel-nova-lang": "^1.4",
+        "ebess/advanced-nova-media-library": "^3.2",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
