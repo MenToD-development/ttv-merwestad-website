@@ -20,6 +20,10 @@ class CreatePagesTable extends Migration
 
             $table->string('name');
             $table->string('title');
+            $table->text('description');
+
+            $table->boolean('secured')
+                ->default(false);
 
             $table->timestamps();
             $table->softDeletes();
