@@ -126,4 +126,22 @@ class User extends Resource
     {
         return [];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public static function label(): string
+    {
+        return 'Gebruikers';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function singularLabel(): string
+    {
+        return 'Gebruiker';
+    }
+
+
 }
