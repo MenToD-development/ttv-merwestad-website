@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/**
+ * @todo het json bestand met routes hierin inladen.
+ */
+
+Route::get( '', function (){
     return view('welcome');
 });

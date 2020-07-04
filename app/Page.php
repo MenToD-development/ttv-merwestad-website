@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Str;
 use Mpociot\Versionable\VersionableTrait;
 
 /**
@@ -34,6 +36,8 @@ use Mpociot\Versionable\VersionableTrait;
  * @property Carbon $created_at
  * @property Carbon $updated_ad
  * @property Carbon $deleted_at
+ *
+ * @method Builder visible()
  */
 class Page extends Model
 {
@@ -75,5 +79,20 @@ class Page extends Model
     {
         return $this->belongsToMany(Menu::class)
             ->withPivot('order');
+    }
+
+    public function scopeVisible(Builder $query): Builder
+    {
+        return $query->where('visible', '1');
+    }
+
+    public function path(): string
+    {
+        $path = '';
+        if ($this->parent) {
+            $path = $this->parent->path();
+        }
+        $path .= '/' . Str::slug($this->name, '-');
+        return trim($path, '/');
     }
 }
