@@ -20,6 +20,11 @@ class SettingsFields
         return [
             Select::make('Hoofdmenu', 'main-menu')
                 ->options($this->menus())
+                ->help('Dit menu wordt gebruikt voor het hoofd menu bovenaan de pagina.'),
+
+            Select::make('Disclaimer menu', 'disclaimer-menu')
+                ->options($this->menus())
+                ->help('Dit menu wordt gebruikt voor onderaan de website in de witte balk.')
         ];
     }
 }
