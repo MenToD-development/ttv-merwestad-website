@@ -15,7 +15,6 @@
     ],
     "require": {
         "php": "^7.2.5",
-        "advoor/nova-editor-js": "^1.0",
         "coderello/laravel-nova-lang": "^1.4",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
