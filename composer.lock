@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4f741e8b65166119df80b70e7433975",
+    "content-hash": "363b74447d7a16ab3e7afc4f1c0f3c44",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1601,6 +1601,50 @@
                 "storage"
             ],
             "time": "2020-05-18T15:13:39+00:00"
+        },
+        {
+            "name": "manogi/nova-tiptap",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/manogi/nova-tiptap.git",
+                "reference": "11404d5909c9e29029d5d0ea1e5c105cdda9af3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/manogi/nova-tiptap/zipball/11404d5909c9e29029d5d0ea1e5c105cdda9af3e",
+                "reference": "11404d5909c9e29029d5d0ea1e5c105cdda9af3e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Manogi\\Tiptap\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Manogi\\Tiptap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tiptap editor field.",
+            "keywords": [
+                "editor",
+                "laravel",
+                "nova",
+                "tiptap",
+                "vue"
+            ],
+            "time": "2020-06-18T07:52:52+00:00"
         },
         {
             "name": "monolog/monolog",
