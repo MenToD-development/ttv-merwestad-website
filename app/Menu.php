@@ -38,6 +38,7 @@ class Menu extends Model
 
     public function pages(): BelongsToMany
     {
-        return $this->belongsToMany(Page::class);
+        return $this->belongsToMany(Page::class)
+            ->withPivot('order');
     }
 }
