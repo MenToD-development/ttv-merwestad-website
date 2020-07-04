@@ -121,7 +121,8 @@ class Page extends Resource
             ]),
 
             BelongsToMany::make('Zichtbaar in menu\'s', 'menus', Menu::class)
-                ->singularLabel('Menu'),
+                ->singularLabel('Menu')
+                ->fields(new MenuPageFields()),
 
             HasMany::make('Dochter pagina\'s', 'children', Page::class)
                 ->singularLabel('Dochter pagina')

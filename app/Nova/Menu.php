@@ -53,6 +53,7 @@ class Menu extends Resource
 
             BelongsToMany::make('Pagina\'s in dit menu', 'pages', Page::class)
                 ->singularLabel('Pagina')
+                ->fields(new MenuPageFields())
         ];
     }
 
