@@ -16,13 +16,26 @@ class CreatePagesTable extends Migration
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger('author');
+            /* Relations */
+            $table->unsignedBigInteger('author')
+                ->nullable();
+            $table->unsignedBigInteger('parent')
+                ->nullable();
 
+            /* Page information */
             $table->string('name');
+            $table->string('image')
+                ->nullable();
+            $table->text('content');
+
+            /* Meta */
             $table->string('title');
             $table->text('description');
 
-            $table->boolean('secured')
+            /* Settings */
+            $table->boolean('protected')
+                ->default(false);
+            $table->boolean('visible')
                 ->default(false);
 
             $table->timestamps();
@@ -33,7 +46,12 @@ class CreatePagesTable extends Migration
             $table->foreign('author')
                 ->on('users')
                 ->references('id')
-                ->onDelete('cascade');
+                ->onDelete('set null');
+
+            $table->foreign('parent')
+                ->on('pages')
+                ->references('id')
+                ->onDelete('set null');
         });
     }
 
