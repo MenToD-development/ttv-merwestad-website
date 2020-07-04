@@ -2,13 +2,19 @@
 
 namespace App\Nova;
 
+use App\Nova\Flexible\Layouts\TextWithImage;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Heading;
 use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Line;
 use Laravel\Nova\Fields\Stack;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Panel;
+use Whitecube\NovaFlexibleContent\Flexible;
 
 class Page extends Resource
 {
@@ -58,25 +64,47 @@ class Page extends Resource
                     ->asBase()
             ]),
 
-            Hidden::make('author')
-                ->default(function () {
-                    return auth()->user()->id;
-                }),
+            Panel::make('Pagina', [
+                Hidden::make('author')
+                    ->default(function () {
+                        return auth()->user()->id;
+                    }),
 
-            Text::make('Pagina naam', 'name')
-                ->required()
-                ->help('Hiermee wordt de pagina aangeduid. Deze naam zal ook '
-                    . 'in het menu verschijnen.'),
+                Text::make('Pagina naam', 'name')
+                    ->required()
+                    ->help('Hiermee wordt de pagina aangeduid. Deze naam zal ook '
+                        . 'in het menu verschijnen.'),
 
-            Heading::make('Meta gegevens')
-                ->help('Dit zijn gegevens die mogelijk niet te zien zijn op de website'
-                    . ' maar worden gebruikt door Google of andere social media.'),
+                Boolean::make('Zichtbaar op de website?', 'visible'),
 
-            Text::make('Pagina titel', 'title')
-                ->required()
-                ->help('Dit is de alles omschrijven titel waarmee de pagina '
-                    . 'wordt omschreven. Deze titel wordt ook als google resultaat '
-                    . 'weergeven.')
+                Boolean::make('Pagina beveiligen?', 'protected')
+                    ->canSee(function () {
+                        return auth()->user()->isAdmin();
+                    }),
+            ]),
+
+            Panel::make('Pagina inhoud', [
+                Flexible::make('Inhoud', 'content')
+                    ->fullWidth()
+                    ->addLayout(TextWithImage::class)
+            ]),
+
+            Panel::make('Vindbaarheid', [
+                Heading::make('Meta gegevens'),
+
+                Text::make('Titel', 'title')
+                    ->required()
+                    ->help('Dit is de alles omschrijven titel waarmee de pagina '
+                        . 'wordt omschreven. Deze titel wordt ook als google resultaat '
+                        . 'weergeven.'),
+
+                Textarea::make('Omschrijving', 'Description'),
+
+                Image::make('Afbeelding', 'image')
+                    ->help('Deze afbeelding wordt gebruikt als hoofdafbeelding dan de pagina.'
+                        . ' Deze afbeelding wordt ook gebruikt zodra je de pagina gaat delen op '
+                        . 'facebook of andere social media.')
+            ])
         ];
     }
 
