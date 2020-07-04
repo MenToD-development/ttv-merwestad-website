@@ -61,9 +61,9 @@ class Page extends Resource
             ID::make()->sortable(),
 
             Stack::make('Pagina', [
-                Line::make('title')
-                    ->asHeading(),
                 Line::make('name')
+                    ->asHeading(),
+                Line::make('title')
                     ->asBase()
             ]),
 
