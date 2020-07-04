@@ -24,11 +24,14 @@ class CreatePagesTable extends Migration
 
             /* Page information */
             $table->string('name');
-            $table->text('content');
+            $table->text('content')
+                ->nullable();
 
             /* Meta */
-            $table->string('title');
-            $table->text('description');
+            $table->string('title')
+                ->nullable();
+            $table->text('description')
+                ->nullable();
             $table->string('image')
                 ->nullable();
 
