@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Mpociot\Versionable\VersionableTrait;
@@ -18,6 +19,7 @@ use Mpociot\Versionable\VersionableTrait;
  * @property User|null $author
  * @property Page|null $parent
  * @property Collection $children
+ * @property Collection $menus
  *
  * @property string $name
  * @property string $content
@@ -67,5 +69,10 @@ class Page extends Model
     public function children(): HasMany
     {
         return $this->hasMany(Page::class, 'parent_id');
+    }
+
+    public function menus(): BelongsToMany
+    {
+        return $this->belongsToMany(Menu::class);
     }
 }
