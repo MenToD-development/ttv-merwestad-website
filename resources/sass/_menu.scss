@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#website {
+  .fa-bars {
+    display: block;
+  }
+  .fa-times {
+    display: none;
+  }
+
+  .menu {
+    @apply transition-all ease-in-out duration-100;
+    @apply fixed;
+    @apply w-full h-screen pt-16;
+
+    transform: translateX(-100%);
+  }
+
+  &.show-menu {
+    .fa-bars {
+      display: none;
+    }
+    .fa-times {
+      display: block;
+    }
+
+    .menu {
+      transform: translateX(0);
+    }
+  }
+}
