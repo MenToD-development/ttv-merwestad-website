@@ -17,9 +17,9 @@ class CreatePagesTable extends Migration
             $table->id();
 
             /* Relations */
-            $table->unsignedBigInteger('author')
+            $table->unsignedBigInteger('user_id')
                 ->nullable();
-            $table->unsignedBigInteger('parent')
+            $table->unsignedBigInteger('parent_id')
                 ->nullable();
 
             /* Page information */
@@ -46,12 +46,12 @@ class CreatePagesTable extends Migration
         });
 
         Schema::table('pages', function (Blueprint $table) {
-            $table->foreign('author')
+            $table->foreign('user_id')
                 ->on('users')
                 ->references('id')
                 ->onDelete('set null');
 
-            $table->foreign('parent')
+            $table->foreign('parent_id')
                 ->on('pages')
                 ->references('id')
                 ->onDelete('set null');
