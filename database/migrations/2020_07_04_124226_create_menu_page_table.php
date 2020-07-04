@@ -16,6 +16,9 @@ class CreateMenuPageTable extends Migration
         Schema::create('menu_page', function (Blueprint $table) {
             $table->unsignedBigInteger('menu_id');
             $table->unsignedBigInteger('page_id');
+
+            $table->unsignedBigInteger('order')
+                ->default(1);
         });
 
         Schema::table('menu_page', function (Blueprint $table) {
