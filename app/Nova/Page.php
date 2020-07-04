@@ -75,7 +75,8 @@ class Page extends Resource
                 Text::make('Pagina naam', 'name')
                     ->required()
                     ->help('Hiermee wordt de pagina aangeduid. Deze naam zal ook '
-                        . 'in het menu verschijnen.'),
+                        . 'in het menu verschijnen.')
+                    ->onlyOnForms(),
 
                 BelongsTo::make('Moeder pagina', 'parent', Page::class)
                     ->withoutTrashed()
@@ -102,17 +103,24 @@ class Page extends Resource
                     ->required()
                     ->help('Dit is de alles omschrijven titel waarmee de pagina '
                         . 'wordt omschreven. Deze titel wordt ook als google resultaat '
-                        . 'weergeven.'),
+                        . 'weergeven.')
+                    ->onlyOnForms()
+                    ->showOnDetail(),
 
-                Textarea::make('Omschrijving', 'Description'),
+                Textarea::make('Omschrijving', 'Description')
+                    ->onlyOnForms()
+                    ->showOnDetail(),
 
                 Image::make('Afbeelding', 'image')
                     ->help('Deze afbeelding wordt gebruikt als hoofdafbeelding dan de pagina.'
                         . ' Deze afbeelding wordt ook gebruikt zodra je de pagina gaat delen op '
                         . 'facebook of andere social media.')
+                    ->onlyOnForms()
+                    ->showOnDetail()
             ]),
 
             HasMany::make('Dochter pagina\'s', 'children', Page::class)
+                ->singularLabel('Dochter pagina')
         ];
     }
 
