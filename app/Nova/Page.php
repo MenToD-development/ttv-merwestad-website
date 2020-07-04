@@ -4,7 +4,9 @@ namespace App\Nova;
 
 use App\Nova\Flexible\Layouts\TextWithImage;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\Heading;
 use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\ID;
@@ -65,7 +67,7 @@ class Page extends Resource
             ]),
 
             Panel::make('Pagina', [
-                Hidden::make('author')
+                Hidden::make('user_id')
                     ->default(function () {
                         return auth()->user()->id;
                     }),
@@ -74,6 +76,10 @@ class Page extends Resource
                     ->required()
                     ->help('Hiermee wordt de pagina aangeduid. Deze naam zal ook '
                         . 'in het menu verschijnen.'),
+
+                BelongsTo::make('Moeder pagina', 'parent', Page::class)
+                    ->withoutTrashed()
+                    ->nullable(),
 
                 Boolean::make('Zichtbaar op de website?', 'visible'),
 
@@ -104,7 +110,9 @@ class Page extends Resource
                     ->help('Deze afbeelding wordt gebruikt als hoofdafbeelding dan de pagina.'
                         . ' Deze afbeelding wordt ook gebruikt zodra je de pagina gaat delen op '
                         . 'facebook of andere social media.')
-            ])
+            ]),
+
+            HasMany::make('Dochter pagina\'s', 'children', Page::class)
         ];
     }
 
