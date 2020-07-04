@@ -5,6 +5,7 @@ namespace App\Nova;
 use App\Nova\Flexible\Layouts\TextWithImage;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\Heading;
@@ -118,6 +119,9 @@ class Page extends Resource
                     ->onlyOnForms()
                     ->showOnDetail()
             ]),
+
+            BelongsToMany::make('Zichtbaar in menu\'s', 'menus', Menu::class)
+                ->singularLabel('Menu'),
 
             HasMany::make('Dochter pagina\'s', 'children', Page::class)
                 ->singularLabel('Dochter pagina')

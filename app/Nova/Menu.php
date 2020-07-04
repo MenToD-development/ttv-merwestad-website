@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
@@ -45,9 +46,13 @@ class Menu extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Naam', 'name'),
+            Text::make('Naam', 'name')
+                ->required(),
 
-            Textarea::make('Omschrijving', 'description')
+            Textarea::make('Omschrijving', 'description'),
+
+            BelongsToMany::make('Pagina\'s in dit menu', 'pages', Page::class)
+                ->singularLabel('Pagina')
         ];
     }
 
