@@ -95,4 +95,9 @@ class Page extends Model
         $path .= '/' . Str::slug($this->name, '-');
         return trim($path, '/');
     }
+
+    public function routeName(): string
+    {
+        return Str::slug($this->name, '-');
+    }
 }

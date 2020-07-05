@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,11 +13,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+if (file_exists(__DIR__ . '/routes.json')) {
+    $routes = Collection::make(json_decode(
+        file_get_contents(__DIR__ . '/routes.json')
+    ));
 
-/**
- * @todo het json bestand met routes hierin inladen.
- */
+    $routes->each(function (object $data) {
+        Route::get($data->path, $data->controller)->name($data->name);
+    });
+}
 
-Route::get( '', function (){
-    return view('welcome');
-});
+//Route::get( '', function (){
+//    return view('welcome');
+//});

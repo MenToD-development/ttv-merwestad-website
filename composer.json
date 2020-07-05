@@ -25,7 +25,8 @@
         "laravel/tinker": "^2.0",
         "manogi/nova-tiptap": "^0.6.0",
         "mpociot/versionable": "^3.3",
-        "whitecube/nova-flexible-content": "^0.2.4"
+        "whitecube/nova-flexible-content": "^0.2.4",
+        "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
