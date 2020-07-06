@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Events\PageSaved;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -44,7 +45,7 @@ class Page extends Model
     use VersionableTrait, SoftDeletes;
 
     /**
-     * @var string[]
+     * @var array
      */
     protected $fillable = [
         'name', 'content', 'title', 'description', 'image', 'protected',
@@ -52,12 +53,19 @@ class Page extends Model
     ];
 
     /**
-     * @var string[]
+     * @var array
      */
     protected $dates = [
         'created_at',
         'updated_at',
         'deleted_at'
+    ];
+
+    /**
+     * @var array
+     */
+    protected $dispatchesEvents = [
+        'saved' => PageSaved::class
     ];
 
     public function author(): BelongsTo
