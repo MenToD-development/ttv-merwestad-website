@@ -30,31 +30,7 @@
       @include('layout.partial.footer')
 
 
-      <div class="w-full bg-white">
-        <div class="container mx-auto px-4 lg:px-8">
-          <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/3 h-16 flex items-center justify-start">
-              <span class="block w-full text-center md:w-auto md:inline-block md:text-left
-              font-sans text-sm
-                text-black">
-                &copy; 2020 t.t.v. Merwestad
-              </span>
-            </div>
-            <div class="w-full md:w-1/3 h-16 flex items-center justify-center">
-              <a class="inline-block font-sans text-sm text-black px-3" href="#">
-                Disclaimer
-              </a>
-              <a class="inline-block font-sans text-sm text-black px-3" href="#">
-                Privacyverklaring
-              </a>
-              <a class="inline-block font-sans text-sm text-black px-3" href="#">
-                Cookies
-              </a>
-            </div>
-            <div class="w-1/3"></div>
-          </div>
-        </div>
-      </div>
+      @include('layout.partial.copyright')
     </footer>
 
   </div>
