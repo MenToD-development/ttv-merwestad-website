@@ -13,15 +13,12 @@
         </span>
       </div>
       <div class="w-full md:w-1/2 h-16 flex items-center justify-end">
-        <a class="inline-block font-sans text-sm text-black px-3" href="#">
-          Disclaimer
+      @foreach ($disclaimerItems as $page)
+        <a href="{{ route($page->id) }}" title="{{ $page->title }}"
+           class="inline-block font-sans text-sm text-black px-3">
+          {{ $page->name }}
         </a>
-        <a class="inline-block font-sans text-sm text-black px-3" href="#">
-          Privacyverklaring
-        </a>
-        <a class="inline-block font-sans text-sm text-black px-3" href="#">
-          Cookies
-        </a>
+      @endforeach
       </div>
     </div>
   </div>
