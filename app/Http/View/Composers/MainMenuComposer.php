@@ -25,6 +25,6 @@ class MainMenuComposer
 
     public function compose(View $view): void
     {
-        $view->with('pages', $this->pages());
+        $view->with('mainMenuItems', $this->pages());
     }
 }
