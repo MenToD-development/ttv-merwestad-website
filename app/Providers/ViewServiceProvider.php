@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\View\Composers\DisclaimerMenuComposer;
 use App\Http\View\Composers\MainMenuComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -28,6 +29,11 @@ class ViewServiceProvider extends ServiceProvider
         View::composer(
             ['layout.partial.navigation', 'layout.partial.footer'],
             MainMenuComposer::class
+        );
+
+        View::composer(
+            'layout.partial.copyright',
+            DisclaimerMenuComposer::class
         );
     }
 }
