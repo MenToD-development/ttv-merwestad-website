@@ -14,6 +14,7 @@ class MenuPageFields
                 ->default(function () {
                     return 1;
                 })
+                ->sortable()
         ];
     }
 }
