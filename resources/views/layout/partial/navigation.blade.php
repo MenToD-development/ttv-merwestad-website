@@ -13,6 +13,12 @@
 
     <nav class="hidden inline-flex flex-grow justify-end items-center h-full pr-16 lg:inline-flex">
       <div class="inline-flex justify-left items-center w-auto h-full">
+        @foreach ($pages as $page)
+          <x-menu-item class="mr-4 xl:mr-6" route-name="{{ $page->id }}" title="{{ $page->title }}">
+            {{ $page->name }}
+          </x-menu-item>
+        @endforeach
+
         {{--            <x-menu-item class="mr-4 xl:mr-6" route-name="home">--}}
         {{--              Home--}}
         {{--            </x-menu-item>--}}
