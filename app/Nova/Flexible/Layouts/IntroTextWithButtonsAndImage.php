@@ -5,21 +5,21 @@ namespace App\Nova\Flexible\Layouts;
 use Illuminate\Support\Collection;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
-class TextWithImage extends Layout
+class IntroTextWithButtonsAndImage extends Layout
 {
     /**
      * The layout's unique identifier
      *
      * @var string
      */
-    protected $name = 'text-with-image';
+    protected $name = 'intro-text-with-buttons-and-image';
 
     /**
      * The displayed title
      *
      * @var string
      */
-    protected $title = 'Tekst met een afbeelding';
+    protected $title = 'Intro tekst met buttons en een afbeelding';
 
     /**
      * Get the fields displayed by the layout.
