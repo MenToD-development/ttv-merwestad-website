@@ -6,5 +6,10 @@
 
   <meta name="description" content="{{ $page->description }}">
   <meta name="og:description" content="{{ $page->description }}">
+@endsection
+
+@section('content')
 
 @endsection
+
+
