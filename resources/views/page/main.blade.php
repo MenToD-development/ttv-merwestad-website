@@ -9,7 +9,9 @@
 @endsection
 
 @section('content')
-
+  @foreach ($page->content as $content)
+    @includeIf($content->view, ['layout' => $content])
+  @endforeach
 @endsection
 
 

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Casts\MerwestadFlexibleCast;
 use App\Events\PageSaved;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
@@ -59,6 +60,13 @@ class Page extends Model
         'created_at',
         'updated_at',
         'deleted_at'
+    ];
+
+    /**
+     * @var string[]
+     */
+    protected $casts = [
+        'content' => MerwestadFlexibleCast::class
     ];
 
     /**

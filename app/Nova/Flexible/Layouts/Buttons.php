@@ -2,23 +2,24 @@
 
 namespace App\Nova\Flexible\Layouts;
 
+use Whitecube\NovaFlexibleContent\Flexible;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
-class IntroTitle extends Layout
+class Buttons extends Layout
 {
     /**
      * The layout's unique identifier
      *
      * @var string
      */
-    protected $name = 'intro-title';
+    protected $name = 'buttons';
 
     /**
      * The displayed title
      *
      * @var string
      */
-    protected $title = 'Introductie titel';
+    protected $title = 'Link buttons';
 
     /**
      * Get the fields displayed by the layout.
@@ -28,9 +29,9 @@ class IntroTitle extends Layout
     public function fields()
     {
         return [
-            \Laravel\Nova\Fields\Text::make('Kleine titel', 'small_title'),
-
-            \Laravel\Nova\Fields\Text::make('Hoofd titel', 'title')
+            Flexible::make('Link buttons', 'buttons')
+                ->addLayout(Button::class)
+                ->button('Voeg een link button toe')
         ];
     }
 

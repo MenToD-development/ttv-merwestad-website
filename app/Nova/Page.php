@@ -2,7 +2,7 @@
 
 namespace App\Nova;
 
-use App\Nova\Flexible\Layouts\TextWithImage;
+use App\Nova\Flexible\Layouts\IntroTextWithButtonsAndImage;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
@@ -94,7 +94,7 @@ class Page extends Resource
             Panel::make('Pagina inhoud', [
                 Flexible::make('Inhoud', 'content')
                     ->fullWidth()
-                    ->addLayout(TextWithImage::class)
+                    ->addLayout(IntroTextWithButtonsAndImage::class)
             ]),
 
             Panel::make('Vindbaarheid', [

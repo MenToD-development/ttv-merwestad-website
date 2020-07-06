@@ -22,6 +22,13 @@ class IntroTextWithButtonsAndImage extends Layout
     protected $title = 'Intro tekst met buttons en een afbeelding';
 
     /**
+     * The view file which contains the view for this layout
+     *
+     * @var string
+     */
+    public $view = 'page.layout.intro-text-with-buttons-and-image';
+
+    /**
      * Get the fields displayed by the layout.
      *
      * @return array
@@ -32,6 +39,8 @@ class IntroTextWithButtonsAndImage extends Layout
 
         $fields = $fields->merge((new IntroTitle())->fields());
         $fields = $fields->merge((new Text())->fields());
+        $fields = $fields->merge((new Buttons())->fields());
+        $fields = $fields->merge((new Image())->fields());
 
         return $fields->toArray();
     }
