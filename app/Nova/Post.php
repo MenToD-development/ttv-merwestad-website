@@ -44,6 +44,8 @@ class Post extends Resource
         'title', 'content', 'image', 'published_at', 'published_till'
     ];
 
+    public static $group = 'Website';
+
     /**
      * @inheritDoc
      */
