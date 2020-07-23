@@ -2,22 +2,23 @@
 
 namespace App\Nova;
 
-use App\Nova\Flexible\Layouts\IntroTextWithButtonsAndImage;
+use Laravel\Nova\Panel;
+use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\BelongsToMany;
+use Laravel\Nova\Fields\Line;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Stack;
+use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\Heading;
-use Laravel\Nova\Fields\Hidden;
-use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Image;
-use Laravel\Nova\Fields\Line;
-use Laravel\Nova\Fields\Stack;
-use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Panel;
+use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
+use App\Nova\Flexible\Layouts\Services;
 use Whitecube\NovaFlexibleContent\Flexible;
+use App\Nova\Flexible\Layouts\IntroTextWithButtonsAndImage;
 
 class Page extends Resource
 {
@@ -95,6 +96,7 @@ class Page extends Resource
                 Flexible::make('Inhoud', 'content')
                     ->fullWidth()
                     ->addLayout(IntroTextWithButtonsAndImage::class)
+                    ->addLayout(Services::class)
             ]),
 
             Panel::make('Vindbaarheid', [
