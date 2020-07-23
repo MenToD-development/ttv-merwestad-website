@@ -16,6 +16,9 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
 
+            $table->unsignedBigInteger('user_id')
+                ->nullable();
+
             $table->string('title');
             $table->string('image')
                 ->nullable();
@@ -32,6 +35,13 @@ class CreatePostsTable extends Migration
 
             $table->timestamps();
             $table->softDeletes();
+        });
+
+        Schema::table('posts', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->on('users')
+                ->references('id')
+                ->onDelete('set null');
         });
     }
 
