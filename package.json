@@ -23,5 +23,8 @@
         "vue-parallaxy": "^1.1.1",
         "vue-template-compiler": "^2.6.11",
         "@fortawesome/fontawesome-free": "^5.13.1"
+    },
+    "dependencies": {
+        "@tailwindcss/typography": "^0.2.0"
     }
 }
