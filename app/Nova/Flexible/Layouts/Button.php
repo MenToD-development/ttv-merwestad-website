@@ -4,6 +4,8 @@ namespace App\Nova\Flexible\Layouts;
 
 use App\Page;
 use Laravel\Nova\Fields\Select;
+use Illuminate\Support\Collection;
+use App\Nova\Flexible\Layouts\Icon;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class Button extends Layout
@@ -36,33 +38,31 @@ class Button extends Layout
      *
      * @return array
      */
-    public function fields()
+    public function fields($prefix = '')
     {
-        return [
-            Select::make('Link naar pagina', 'page_id')
-                ->options($this->pages()),
+        $fields = new Collection();
 
-            \Laravel\Nova\Fields\Text::make('Externe link', 'external_link')
+        $fields->add(
+            Select::make('Link naar pagina', `{$prefix}page_id`)
+                ->options($this->pages())
+        );
+
+        $fields->add(
+            \Laravel\Nova\Fields\Text::make('Externe link', `{$prefix}external_link`)
                 ->help('Vul hier een website adres in als de button naar een externe '
                     . 'website moet linken'),
+        );
 
-            \Laravel\Nova\Fields\Text::make('Button tekst', 'content')
+        $fields->add(
+            \Laravel\Nova\Fields\Text::make('Button tekst', `{$prefix}content`)
                 ->help('Deze tekst wordt in de button geplaatst'),
+        );
 
-            Select::make('Icoon', 'icon')
-                ->options([
-                    'fa-user-circle' => 'Mijn account icoon',
-                    'fa-paper-plane' => 'E-mail icoon',
-                    'fa-route' => 'Navigeren / route icoon',
-                    'fa-calendar' => 'Agenda icoon',
-                    'fa-table-tennis' => 'Tafeltennis icoon',
-                    'fa-users' => 'Groep mensen icoon',
-                    'fa-arrow-alt-circle-right' => 'Pijl naar rechts',
-                    'fa-arrow-alt-circle-left' => 'Pijl naar links',
-                    'fa-arrow-alt-circle-up' => 'Pijl naar boven',
-                    'fa-arrow-alt-circle-down' => 'Pijl naar beneden'
-                ])
-        ];
+        $fields = $fields->merge(
+            (new Icon())->fields()
+        );
+
+        return $fields->toArray();
     }
 
 }
