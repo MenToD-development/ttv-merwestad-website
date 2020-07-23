@@ -2,7 +2,6 @@
 
 namespace App\Nova\Flexible\Layouts;
 
-use Laravel\Nova\Fields\Text;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class TitleWithLabel extends Layout
@@ -29,9 +28,9 @@ class TitleWithLabel extends Layout
     public function fields($prefix = '')
     {
         return [
-            Text::make('Label', `{$prefix}label`),
+            \Laravel\Nova\Fields\Text::make('Label', `{$prefix}label`),
 
-            Text::make('Titel', `{$prefix}title`)
+            \Laravel\Nova\Fields\Text::make('Titel', `{$prefix}title`)
         ];
     }
 

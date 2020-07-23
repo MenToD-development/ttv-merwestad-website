@@ -3,7 +3,7 @@
 namespace App\Nova\Flexible\Layouts;
 
 use Illuminate\Support\Collection;
-use App\Nova\Flexible\Layouts\Icon;
+use App\Nova\Flexible\Layouts\Elements\Icon;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class TitleWithIcon extends Layout

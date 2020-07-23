@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova\Flexible\Layouts;
+namespace App\Nova\Flexible\Layouts\Elements;
 
 use Manogi\Tiptap\Tiptap;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;

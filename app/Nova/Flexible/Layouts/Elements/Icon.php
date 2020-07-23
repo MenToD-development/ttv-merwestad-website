@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova\Flexible\Layouts;
+namespace App\Nova\Flexible\Layouts\Elements;
 
 use Laravel\Nova\Fields\Select;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;

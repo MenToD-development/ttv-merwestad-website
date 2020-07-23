@@ -3,6 +3,10 @@
 namespace App\Nova\Flexible\Layouts;
 
 use Illuminate\Support\Collection;
+use App\Nova\Flexible\Layouts\Buttons;
+use App\Nova\Flexible\Layouts\IntroTitle;
+use App\Nova\Flexible\Layouts\Elements\Text;
+use App\Nova\Flexible\Layouts\Elements\Image;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class IntroTextWithButtonsAndImage extends Layout

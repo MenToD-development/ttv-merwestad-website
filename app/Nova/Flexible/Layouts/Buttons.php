@@ -3,6 +3,7 @@
 namespace App\Nova\Flexible\Layouts;
 
 use Whitecube\NovaFlexibleContent\Flexible;
+use App\Nova\Flexible\Layouts\Elements\Button;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class Buttons extends Layout
