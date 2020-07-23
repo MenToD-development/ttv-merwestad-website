@@ -5,7 +5,7 @@ namespace App\Nova\Flexible\Layouts\Elements;
 use App\Page;
 use Laravel\Nova\Fields\Select;
 use Illuminate\Support\Collection;
-use App\Nova\Flexible\Layouts\Icon;
+use App\Nova\Flexible\Layouts\Elements\Icon;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class Button extends Layout
