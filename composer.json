@@ -15,7 +15,9 @@
     ],
     "require": {
         "php": "^7.2.5",
+        "ext-json": "*",
         "coderello/laravel-nova-lang": "^1.4",
+        "digital-creative/conditional-container": "^1.1",
         "epigra/nova-settings": "^1.3",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -25,8 +27,7 @@
         "laravel/tinker": "^2.0",
         "manogi/nova-tiptap": "^0.6.0",
         "mpociot/versionable": "^3.3",
-        "whitecube/nova-flexible-content": "^0.2.4",
-        "ext-json": "*"
+        "whitecube/nova-flexible-content": "^0.2.4"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

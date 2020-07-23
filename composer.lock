@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f41bba55302ea81835518ce56919b1f2",
+    "content-hash": "89c9b99364ba2689992c4e237b6c074e",
     "packages": [
         {
             "name": "akaunting/setting",
@@ -312,6 +312,55 @@
                 "support"
             ],
             "time": "2020-06-03T22:48:45+00:00"
+        },
+        {
+            "name": "digital-creative/conditional-container",
+            "version": "v1.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dcasia/conditional-container.git",
+                "reference": "26fc647db2f22869a1968bf4086535a1058d8050"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dcasia/conditional-container/zipball/26fc647db2f22869a1968bf4086535a1058d8050",
+                "reference": "26fc647db2f22869a1968bf4086535a1058d8050",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DigitalCreative\\ConditionalContainer\\ConditionalContainerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DigitalCreative\\ConditionalContainer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Milewski"
+                }
+            ],
+            "description": "Provides an easy way to conditionally show and hide fields in your Nova resources.",
+            "keywords": [
+                "conditional",
+                "dependency",
+                "dynamic",
+                "laravel",
+                "nova"
+            ],
+            "time": "2020-07-18T14:16:38+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -6991,7 +7040,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2.5"
+        "php": "^7.2.5",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
