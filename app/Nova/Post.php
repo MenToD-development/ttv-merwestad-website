@@ -85,7 +85,17 @@ class Post extends Resource
             Image::make('Afbeelding', 'image')
                 ->nullable(),
 
-            Tiptap::make('Bericht', 'content'),
+            Tiptap::make('Bericht', 'content')
+                ->buttons([
+                    'italic',
+                    'bold',
+                    'link',
+                    'strike',
+                    'underline',
+                    'bullet_list',
+                    'ordered_list',
+                    'blockquote'
+                ]),
 
             Boolean::make('Gepubliceerd?', 'published'),
 
