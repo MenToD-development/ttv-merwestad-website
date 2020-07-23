@@ -6,11 +6,11 @@
         <span class="block text-5xl xl:text-6xl text-primary-normal">{{ $layout->title }}</span>
       </h1>
 
-      <div class="text">
+      <div class="prose-lg text">
         {!! $layout->content !!}
       </div>
 
-      <div class="flex items-center">
+      <div class="mt-10 flex items-center">
         @foreach ($layout->buttons as $button)
           @includeIf('page.layout.button', ['layout' => $button->attributes])
         @endforeach
