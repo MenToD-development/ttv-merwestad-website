@@ -36,7 +36,7 @@ class TitleWithIcon extends Layout
         );
 
         $fields->add(
-            \Laravel\Nova\Fields\Text::make('Titel', `{$prefix}title`)
+            \Laravel\Nova\Fields\Text::make('Titel', 'title' . $prefix)
         );
 
         return $fields->toArray();

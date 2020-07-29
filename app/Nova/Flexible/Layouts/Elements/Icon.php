@@ -29,7 +29,7 @@ class Icon extends Layout
     public function fields($prefix = '')
     {
         return [
-            Select::make('Icoon', `{$prefix}icon`)
+            Select::make('Icoon', 'icon' . $prefix)
                 ->options([
                     'fa-user-circle' => 'Mijn account icoon',
                     'fa-paper-plane' => 'E-mail icoon',

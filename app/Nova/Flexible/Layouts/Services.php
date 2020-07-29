@@ -2,9 +2,7 @@
 
 namespace App\Nova\Flexible\Layouts;
 
-use Illuminate\Support\Collection;
-use App\Nova\Flexible\Layouts\TitleWithIcon;
-use App\Nova\Flexible\Layouts\TitleWithLabel;
+use Exception;
 use Whitecube\NovaFlexibleContent\Flexible;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
@@ -33,21 +31,23 @@ class Services extends Layout
      * Get the fields displayed by the layout.
      *
      * @return array
+     * @throws Exception
      */
-    public function fields($prefix = '')
+    public function fields()
     {
-        $fields = new Collection();
+        return [
 
-        // Titel
-        $fields = $fields->merge((new TitleWithLabel())->fields($prefix));
+            \Laravel\Nova\Fields\Text::make('Label', 'title_label')
+                ->help("Deze tekst komt als een klein label boven de titel."),
 
-        $fields->add(
+            \Laravel\Nova\Fields\Text::make('Titel', 'title_content'),
+
             Flexible::make('Diensten', 'services')
                 ->limit(3)
                 ->addLayout(Service::class)
-        );
 
-        return $fields->toArray();
+
+        ];
     }
 
 }
