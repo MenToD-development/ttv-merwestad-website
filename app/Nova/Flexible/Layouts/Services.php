@@ -25,6 +25,11 @@ class Services extends Layout
     protected $title = 'Diensten';
 
     /**
+     * @var string
+     */
+    public $view = 'page.layout.services';
+
+    /**
      * Get the fields displayed by the layout.
      *
      * @return array
