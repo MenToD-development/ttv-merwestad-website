@@ -5,6 +5,7 @@ namespace App\Nova\Flexible\Layouts;
 use Illuminate\Support\Collection;
 use App\Nova\Flexible\Layouts\TitleWithIcon;
 use App\Nova\Flexible\Layouts\TitleWithLabel;
+use Whitecube\NovaFlexibleContent\Flexible;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class Services extends Layout
@@ -35,10 +36,11 @@ class Services extends Layout
         // Titel
         $fields = $fields->merge((new TitleWithLabel())->fields($prefix));
 
-        // @todo Flexbile toevoegen met een limit van 3 voor het toevoegen van de diensten.
-        
-        // Dienst #1
-        $fields = $fields->merge((new TitleWithIcon())->fields($prefix));
+        $fields->add(
+            Flexible::make('Diensten', 'services')
+                ->limit(3)
+                ->addLayout(Service::class)
+        );
 
         return $fields->toArray();
     }
