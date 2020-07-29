@@ -14,10 +14,19 @@
       </div>
       <div class="w-full md:w-1/2 h-16 flex items-center justify-end">
       @foreach ($disclaimerItems as $page)
-        <a href="{{ route($page->id) }}" title="{{ $page->title }}"
-           class="inline-block font-sans text-sm text-black px-3">
-          {{ $page->name }}
-        </a>
+
+        @if ((int) Route::current()->getName() === $page->id)
+          <a href="{{ route($page->id) }}" title="{{ $page->title }}"
+             class="inline-block font-sans text-sm text-black px-3 underline">
+            {{ $page->name }}
+          </a>
+        @else
+          <a href="{{ route($page->id) }}" title="{{ $page->title }}"
+             class="inline-block font-sans text-sm text-black px-3">
+            {{ $page->name }}
+          </a>
+        @endif
+
       @endforeach
       </div>
     </div>

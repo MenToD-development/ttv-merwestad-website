@@ -6,7 +6,7 @@
       <span class="hidden fa fa-times text-black text-xl"></span>
     </a>
 
-    <a class="inline-block" href="#">
+    <a class="inline-block" href="{{ url('/') }}">
       <span class="font-serif text-lg xl:text-xl text-black">t.t.v.</span>
       <span class="font-serif text-xl xl:text-3xl text-primary-normal">Merwestad</span>
     </a>

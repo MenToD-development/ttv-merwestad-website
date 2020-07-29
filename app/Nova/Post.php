@@ -102,7 +102,7 @@ class Post extends Resource
             ConditionalContainer::make([
                 DateTime::make('Gepubliceerd op', 'published_at')
                     ->default(function () {
-                        return Carbon::now()->timestamp();
+                        return Carbon::now();
                     }),
 
                 DateTime::make('Gepubliceerd tot', 'published_till')

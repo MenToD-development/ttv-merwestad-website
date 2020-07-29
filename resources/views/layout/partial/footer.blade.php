@@ -5,12 +5,22 @@
       <ul>
 
       @foreach ($mainMenuItems as $page)
-        <li class="my-2">
-          <a href="{{ route($page->id) }}" title="{{ $page->title }}"
-             class="text-white text-base font-sans font-bold hover:text-opacity-50">
-            {{ $page->name }}
-          </a>
-        </li>
+
+        @if ((int) Route::current()->getName() === $page->id)
+          <li class="my-2">
+            <a href="{{ route($page->id) }}" title="{{ $page->title }}"
+               class="text-white text-base font-sans font-bold hover:text-opacity-50 underline">
+              {{ $page->name }}
+            </a>
+          </li>
+        @else
+          <li class="my-2">
+            <a href="{{ route($page->id) }}" title="{{ $page->title }}"
+               class="text-white text-base font-sans font-bold hover:text-opacity-50">
+              {{ $page->name }}
+            </a>
+          </li>
+        @endif
       @endforeach
 
       </ul>
