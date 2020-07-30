@@ -3,10 +3,11 @@
 
 namespace App\Http\View\Composers;
 
-use Akaunting\Setting\Facade as Setting;
 use App\Menu;
-use Illuminate\Database\Eloquent\Collection;
+use App\Page;
 use Illuminate\View\View;
+use Akaunting\Setting\Facade as Setting;
+use Illuminate\Database\Eloquent\Collection;
 
 class MainMenuComposer
 {
@@ -20,6 +21,9 @@ class MainMenuComposer
     protected function pages(): Collection
     {
         return $this->menu()->pages
+            ->filter(function (Page $page) {
+                return $page->visible;
+            })
             ->sortBy('pivot.order');
     }
 
