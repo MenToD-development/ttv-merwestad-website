@@ -28,7 +28,7 @@ class ViewServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer(
-            ['layout.partial.navigation', 'layout.partial.footer'],
+            ['layout.partial.navigation', 'layout.partial.footer', 'layout.partial.mobile-menu'],
             MainMenuComposer::class
         );
 
