@@ -4,6 +4,8 @@
 namespace App\Nova;
 
 
+use Laravel\Nova\Panel;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
 
 class SettingsFields
@@ -36,7 +38,16 @@ class SettingsFields
             Select::make('Landings pagina', 'landing-page')
                 ->options($this->pages())
                 ->help('De geselecteerde pagina wordt als welkomst pagina gebruikt en is de '
-                    . 'eerste pagina die geladen wordt.')
+                    . 'eerste pagina die geladen wordt.'),
+
+            Text::make('Adres', 'address')
+                ->help('Het adres van de tafeltennisvereniging'),
+
+            Text::make('Postcode', 'zipcode')
+                ->help('De postcode van de tafeltennisvereniging'),
+
+            Text::make('Woonplaats', 'residence')
+                ->help('De woonplaats van de tafeltennisvereniging'),
         ];
     }
 }

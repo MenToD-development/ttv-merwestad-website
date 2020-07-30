@@ -17,9 +17,11 @@ use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
 use App\Nova\Flexible\Layouts\Services;
+use App\Nova\Flexible\Layouts\NormalText;
 use App\Nova\Flexible\Layouts\CallToAction;
 use Whitecube\NovaFlexibleContent\Flexible;
 use App\Nova\Flexible\Layouts\SponsorsOverview;
+use App\Nova\Flexible\Layouts\ContactInformation;
 use App\Nova\Flexible\Layouts\IntroTextWithButtonsAndImage;
 
 class Page extends Resource
@@ -101,6 +103,8 @@ class Page extends Resource
                     ->addLayout(Services::class)
                     ->addLayout(CallToAction::class)
                     ->addLayout(SponsorsOverview::class)
+                    ->addLayout(ContactInformation::class)
+                    ->addLayout(NormalText::class)
             ]),
 
             Panel::make('Vindbaarheid', [

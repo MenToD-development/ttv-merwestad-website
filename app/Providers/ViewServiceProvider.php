@@ -2,10 +2,11 @@
 
 namespace App\Providers;
 
-use App\Http\View\Composers\DisclaimerMenuComposer;
-use App\Http\View\Composers\MainMenuComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use App\Http\View\Composers\MainMenuComposer;
+use App\Http\View\Composers\SponsorsComposer;
+use App\Http\View\Composers\DisclaimerMenuComposer;
 
 class ViewServiceProvider extends ServiceProvider
 {
@@ -34,6 +35,11 @@ class ViewServiceProvider extends ServiceProvider
         View::composer(
             'layout.partial.copyright',
             DisclaimerMenuComposer::class
+        );
+
+        View::composer(
+            'page.layout.sponsors-overview',
+            SponsorsComposer::class
         );
     }
 }
