@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Flexible\Layouts\CallToAction;
 use Laravel\Nova\Panel;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -97,6 +98,7 @@ class Page extends Resource
                     ->fullWidth()
                     ->addLayout(IntroTextWithButtonsAndImage::class)
                     ->addLayout(Services::class)
+                    ->addLayout(CallToAction::class)
             ]),
 
             Panel::make('Vindbaarheid', [
