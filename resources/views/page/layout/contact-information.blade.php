@@ -32,7 +32,7 @@
           Algemeen
         </span> 
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          <a href="mailto:voorzitter@ttvmerwestad.nl">
+          <a href="mailto:info@ttvmerwestad.nl" style="text-decoration: underline;">
             info@ttvmerwestad.nl
           </a>
         </span>
@@ -42,7 +42,7 @@
           Voorzitter
         </span> 
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          <a href="mailto:voorzitter@ttvmerwestad.nl">
+          <a href="mailto:voorzitter@ttvmerwestad.nl" style="text-decoration: underline;">
             voorzitter@ttvmerwestad.nl
           </a>
         </span>
@@ -52,7 +52,7 @@
           Webmaster
         </span> 
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          <a href="mailto:webmaster@ttvmerwestad.nl">
+          <a href="mailto:webmaster@ttvmerwestad.nl" style="text-decoration: underline;">
             webmaster@ttvmerwestad.nl
           </a>
         </span>
@@ -62,7 +62,7 @@
           Wedstrijd secretaris
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          <a href="mailto:wedstrijdsecretaris@ttvmerwestad.nl">
+          <a href="mailto:wedstrijdsecretaris@ttvmerwestad.nl" style="text-decoration: underline;">
             wedstrijdsecretaris@ttvmerwestad.nl
           </a>
         </span>
@@ -72,7 +72,7 @@
           Penningmeester
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          <a href="mailto:wedstrijdsecretaris@ttvmerwestad.nl">
+          <a href="mailto:wedstrijdsecretaris@ttvmerwestad.nl" style="text-decoration: underline;">
             penningmeester@ttvmerwestad.nl
           </a>
         </span>
