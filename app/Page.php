@@ -43,7 +43,7 @@ use Mpociot\Versionable\VersionableTrait;
  */
 class Page extends Model
 {
-    use VersionableTrait, SoftDeletes;
+    use SoftDeletes;
 
     /**
      * @var array
