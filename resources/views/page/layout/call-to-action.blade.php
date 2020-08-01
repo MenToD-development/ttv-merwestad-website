@@ -17,18 +17,18 @@
               </div>
 
               <div class="flex items-center mt-12">
-                <a href="#" title="Bekijk onze agenda" class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
+                {{-- <a href="#" title="Bekijk onze agenda" class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
                     hover:bg-secondary-normal hover:shadow active:shadow-inner">
                   <i class="fas fa-calendar text-primary-normal text-lg mr-0 md:mr-3"></i>
                   <span class="hidden md:inline-block font-sans font-bold text-lg
                       text-primary-normal">
                     Maak een afspraak
                   </span>
-                </a>
-                <span class="inline-block text-white font-sans text-2xl font-bold mx-4">
+                </a> --}}
+                {{-- <span class="inline-block text-white font-sans text-2xl font-bold mx-4">
                   of
-                </span>
-                <a href="#" title="Bekijk onze agenda" class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
+                </span> --}}
+                <a href="mailto:info@ttvmerwestad.nl" title="Neem contact op" class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
                     hover:bg-secondary-normal hover:shadow active:shadow-inner">
                   <i class="fas fa-paper-plane text-primary-normal text-lg mr-0 md:mr-3"></i>
                   <span class="hidden md:inline-block font-sans font-bold text-lg text-primary-normal">
