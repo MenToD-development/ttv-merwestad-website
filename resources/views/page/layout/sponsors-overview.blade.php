@@ -50,7 +50,7 @@
             <span class="block text-white font-serif text-3xl md:text-4xl mb-12">
               Wilt u ons ook sponsoren?
             </span> 
-            <a href="#" title="Sponsor worden?" class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
+            <a href="mailto:sponsoring@ttvmerwestad.nl" title="Sponsor worden?" class="bg-white h-12 inline-flex items-center justify-center px-4 rounded
                 hover:bg-secondary-normal hover:shadow active:shadow-inner">
               <i class="fas fa-paper-plane text-primary-normal text-lg mr-3"></i> 
               <span class="inline-block font-sans font-bold text-lg text-primary-normal">
