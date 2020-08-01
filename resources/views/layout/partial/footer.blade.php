@@ -26,7 +26,7 @@
       </ul>
     </div>
     <div class="w-full mb-8 md:mb-10 md:w-1/2 lg:w-1/4">
-      <span class="inline-block text-white text-2xl font-serif mb-4">Laatste nieuws</span>
+      {{-- <span class="inline-block text-white text-2xl font-serif mb-4">Laatste nieuws</span>
       <ul>
         <li class="my-2">
           <a href="#"
@@ -39,7 +39,7 @@
             Competitie najaar 2020
           </a>
         </li>
-      </ul>
+      </ul> --}}
 
 {{--      <span class="inline-block text-white text-2xl font-serif mb-4 mt-6">Evenementen</span>--}}
 {{--      <ul>--}}
