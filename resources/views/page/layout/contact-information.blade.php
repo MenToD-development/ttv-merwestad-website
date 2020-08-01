@@ -59,7 +59,7 @@
       </div>
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
-          Wedstrijd secretaris
+          Wedstrijdsecretaris
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           <a href="mailto:wedstrijdsecretaris@ttvmerwestad.nl" style="text-decoration: underline;">
@@ -72,7 +72,7 @@
           Penningmeester
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          <a href="mailto:wedstrijdsecretaris@ttvmerwestad.nl" style="text-decoration: underline;">
+          <a href="mailto:penningmeester@ttvmerwestad.nl" style="text-decoration: underline;">
             penningmeester@ttvmerwestad.nl
           </a>
         </span>

@@ -5,7 +5,7 @@
         <span class="block w-full text-center md:w-auto md:inline-block md:text-left
         font-sans text-sm
           text-black">
-          &copy; 2020 T.t.v. Merwestad - Gerealiseerd door
+          &copy; 2020 t.t.v. Merwestad - Gerealiseerd door
           <a href="https://github.com/mennotempelaar" title="Github: mennotempelaar (Menno Tempelaar)"
              target="_blank">Menno Tempelaar</a> en mede mogelijk door
           <a href="https://nova.laravel.com/" title="Laravel Nova - Beautifully-designed administration panel for Laravel"
