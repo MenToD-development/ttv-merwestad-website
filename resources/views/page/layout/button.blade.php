@@ -1,3 +1,5 @@
+@dd($layout)
+
 @if ($layout->page_id)
   <a href="{{ route($layout->page_id) }}"
      class="bg-primary-normal hover:bg-primary-hover h-12 inline-flex items-center justify-center px-4 rounded mr-2">
