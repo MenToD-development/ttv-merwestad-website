@@ -89,9 +89,9 @@
       <br />
       <span class="block text-white text-2xl font-serif mb-4">Openingstijden</span>
       <span class="inline-block w-24 text-base font-sans text-white">Dinsdag</span>
-      <span class="inline-block text-base font-sans text-white">19:30 - 23:00</span><br />
+      <span class="inline-block text-base font-sans text-white">20:00 - 22:00</span><br />
       <span class="inline-block w-24 text-base font-sans text-white">Donderdag</span>
-      <span class="inline-block text-base font-sans text-white">19:30 - 22:00</span><br />
+      <span class="inline-block text-base font-sans text-white">gesloten</span><br />
     </div>
   </div>
 </div>
