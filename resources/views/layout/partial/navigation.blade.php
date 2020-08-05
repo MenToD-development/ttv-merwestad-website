@@ -21,12 +21,21 @@
       </div>
     </nav>
 
-    <a id="route" class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center justify-center px-4 rounded mr-2"
-       href="#">
-      <i class="fas fa-route text-white text-xl xl:text-2xl mr-0 lg:mr-3"></i>
-      <span class="hidden lg:inline-block font-sans font-bold text-base xl:text-lg text-white">
-        Navigeer naar ons
-      </span>
-    </a>
+    <div>
+      <a id="route" class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center justify-center px-4 rounded mr-2"
+         href="#">
+        <i class="fas fa-route text-white text-xl xl:text-2xl mr-0 lg:mr-3"></i>
+        <span class="hidden lg:inline-block font-sans font-bold text-base xl:text-lg text-white">
+          Navigeer naar ons
+        </span>
+      </a>
+      <a class="bg-primary-normal hover:bg-primary-hover h-10 xl:h-12 inline-flex items-center justify-center px-4 rounded mr-2"
+         href="https://www.facebook.com/ttvmerwestad" target="_blank">
+        <i class="fab fa-facebook-square text-white text-xl xl:text-2xl mr-0 lg:mr-3"></i>
+        <span class="hidden lg:inline-block font-sans font-bold text-base xl:text-lg text-white">
+          Facebook
+        </span>
+      </a>
+    </div>
   </div>
 </div>
