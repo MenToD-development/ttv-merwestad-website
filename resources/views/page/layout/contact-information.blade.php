@@ -93,7 +93,7 @@
           Dinsdag
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          20:00 - 22:00
+          gesloten
         </span>
       </div> 
       <div class="flex">
