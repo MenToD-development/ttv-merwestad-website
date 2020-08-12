@@ -20,7 +20,7 @@ class NormalText extends Layout
      *
      * @var string
      */
-    protected $title = 'NormalText';
+    protected $title = 'Tekst';
 
     /**
      * @var string
