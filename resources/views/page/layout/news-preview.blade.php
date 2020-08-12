@@ -4,13 +4,15 @@
       <div class="text-center mb-2">
         <span class="rounded py-1 px-2 md:py-2 md:px-4 bg-white">
           <span class="text-xs md:text-sm font-bold font-sans text-primary-normal">
-            Wat gebeurt er bij Merwestad
+            {{ $content->label }}
           </span>
         </span>
       </div>
       <h2 class="block text-center font-serif text-3xl md:text-4xl text-black mb-10 xl:mb-16">
-        Laatste nieuws
+        {{ $content->title }}
       </h2>
+
+
       <div class="flex flex-col lg:flex-row lg:items-stretch">
         <div class="w-full lg:w-2/4 xl:w-1/3 p-3">
           <div class="bg-white w-auto h-full overflow-y-hidden p-6 relative shadow">
