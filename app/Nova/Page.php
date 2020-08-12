@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Flexible\Layouts\NewsPreview;
 use Laravel\Nova\Panel;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -105,6 +106,7 @@ class Page extends Resource
                     ->addLayout(SponsorsOverview::class)
                     ->addLayout(ContactInformation::class)
                     ->addLayout(NormalText::class)
+                    ->addLayout(NewsPreview::class)
             ]),
 
             Panel::make('Vindbaarheid', [
