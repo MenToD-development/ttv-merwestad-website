@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Mpociot\Versionable\VersionableTrait;
 
@@ -56,6 +57,14 @@ class Post extends Model
     public $casts = [
         'published' => 'boolean'
     ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function author(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 
     /**
      * @param Builder $query
