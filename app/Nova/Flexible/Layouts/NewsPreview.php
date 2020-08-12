@@ -22,6 +22,11 @@ class NewsPreview extends Layout
     protected $title = 'Uitgelicht nieuws voor op de home pagina';
 
     /**
+     * @var string
+     */
+    public $view = 'page.layout.news-preview';
+
+    /**
      * Get the fields displayed by the layout.
      *
      * @return array
