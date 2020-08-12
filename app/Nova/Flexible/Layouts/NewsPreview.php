@@ -2,6 +2,7 @@
 
 namespace App\Nova\Flexible\Layouts;
 
+use App\Post;
 use Laravel\Nova\Fields\Text;
 use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
@@ -38,6 +39,15 @@ class NewsPreview extends Layout
 
             Text::make('Titel', 'title')
         ];
+    }
+
+    protected function postsAsOptions()
+    {
+        return Post::published()
+            ->all()
+            ->mapWithKeys(function (Post $post) {
+                return [$post->id => $post->title];
+            });
     }
 
 }
