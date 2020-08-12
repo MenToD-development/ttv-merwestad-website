@@ -2,12 +2,34 @@
 
 namespace App;
 
-use App\Casts\MerwestadFlexibleCast;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Mpociot\Versionable\VersionableTrait;
 
+/**
+ * Class Post
+ *
+ * @category ttv-merwestad-website
+ * @package  App
+ * @author   mennotempelaar <menno@fourdesign.nl>
+ * @license  MIT https://github.com/Fourdesign/bluecms/blob/development/LICENSE
+ * @link     https://github.com/Fourdesign/bluecms
+ *
+ * @property-read int $id
+ * @property string $title
+ * @property string $image
+ * @property string $content
+ * @property boolean $published
+ * @property Carbon $published_at
+ * @property Carbon $published_till
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ * @property Carbon $deleted_at
+ *
+ * @method Builder published()
+ */
 class Post extends Model
 {
     use VersionableTrait, SoftDeletes;
