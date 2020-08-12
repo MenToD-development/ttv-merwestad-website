@@ -1,4 +1,4 @@
-<div class="bg-secondary-normal w-full pb-16 md:pb-24 xl:pb-32">
+<div class="bg-white w-full pb-16 md:pb-24 xl:pb-32">
   <div class="container mx-auto px-4 xl:px-8">
     <div class="flex justify-center">
       <div class="w-full lg:w-3/4 xl:w-2/3 bg-primary-normal rounded-lg shadow-xl">
