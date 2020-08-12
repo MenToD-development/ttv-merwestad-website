@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Mpociot\Versionable\VersionableTrait;
 
 /**
  * Class Post
@@ -33,7 +32,7 @@ use Mpociot\Versionable\VersionableTrait;
  */
 class Post extends Model
 {
-    use VersionableTrait, SoftDeletes;
+    use SoftDeletes;
 
     protected $fillable = [
         'title', 'content', 'image', 'published', 'published_at',
