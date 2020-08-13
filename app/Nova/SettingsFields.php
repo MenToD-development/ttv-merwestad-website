@@ -40,6 +40,11 @@ class SettingsFields
                 ->help('De geselecteerde pagina wordt als welkomst pagina gebruikt en is de '
                     . 'eerste pagina die geladen wordt.'),
 
+            Select::make('Nieuws pagina', 'news-page')
+                ->options($this->pages())
+                ->help('De geselecteerde pagina wordt gebruikt als hoofdpagina voor het nieuws '
+                    . 'gedeelte van de website.'),
+
             Text::make('Adres', 'address')
                 ->help('Het adres van de tafeltennisvereniging'),
 

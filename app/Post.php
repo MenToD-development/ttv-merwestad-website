@@ -2,11 +2,13 @@
 
 namespace App;
 
+use App\Events\PostSaved;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
 /**
  * Class Post
@@ -57,6 +59,10 @@ class Post extends Model
         'published' => 'boolean'
     ];
 
+    protected $dispatchesEvents = [
+        'saved' => PostSaved::class
+    ];
+
     /**
      * @return BelongsTo
      */
@@ -76,9 +82,19 @@ class Post extends Model
     }
 
     /**
+     * @param int $words
      * @return string
      */
-    public function path(): string {
-        return '';
+    public function excerpt(int $words = 25): string
+    {
+        return Str::words(strip_tags($this->content), $words);
+    }
+
+    /**
+     * @param Page $page
+     * @return string
+     */
+    public function path(Page $page): string {
+        return $page->path() .'/'. Str::slug($this->title, '-');
     }
 }

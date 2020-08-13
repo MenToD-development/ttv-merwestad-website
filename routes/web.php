@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 if (file_exists(__DIR__ . '/routes.json')) {
     $routes = Collection::make(json_decode(
         file_get_contents(__DIR__ . '/routes.json')
@@ -22,7 +23,3 @@ if (file_exists(__DIR__ . '/routes.json')) {
         Route::get($data->path, $data->controller)->name($data->name);
     });
 }
-
-//Route::get( '', function (){
-//    return view('welcome');
-//});

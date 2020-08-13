@@ -2,7 +2,9 @@
 
 namespace App\Console\Commands;
 
+use Akaunting\Setting\Facade;
 use App\Page;
+use App\Post;
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -65,6 +67,21 @@ class WebsiteRoutes extends Command
             });
     }
 
+    protected function publishedPosts()
+    {
+        $newsPage = Page::find(setting('news-page'));
+
+        Post::published()
+            ->get()
+            ->each(function (Post $post) use ($newsPage) {
+                $this->route(
+                    $post->path($newsPage),
+                    'PostController',
+                    $post->id
+                );
+            });
+    }
+
     protected function route(string $path, string $controller, string $name): void
     {
         $this->routes->add(
@@ -99,6 +116,10 @@ class WebsiteRoutes extends Command
         $this->routes = Collection::make();
 
         $this->visiblePages();
+
+        if (setting('news-page')) {
+            $this->publishedPosts();
+        }
 
         $this->save();
     }
