@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Flexible\Layouts\NewsOverview;
 use App\Nova\Flexible\Layouts\NewsPreview;
 use Laravel\Nova\Panel;
 use Laravel\Nova\Fields\ID;
@@ -107,6 +108,7 @@ class Page extends Resource
                     ->addLayout(ContactInformation::class)
                     ->addLayout(NormalText::class)
                     ->addLayout(NewsPreview::class)
+                    ->addLayout(NewsOverview::class)
             ]),
 
             Panel::make('Vindbaarheid', [

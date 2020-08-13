@@ -2,6 +2,7 @@
 
 namespace App\Casts;
 
+use App\Nova\Flexible\Layouts\NewsOverview;
 use App\Nova\Flexible\Layouts\NewsPreview;
 use App\Nova\Flexible\Layouts\Service;
 use App\Nova\Flexible\Layouts\Services;
@@ -25,6 +26,7 @@ class MerwestadFlexibleCast extends FlexibleCast
         'sponsors-overview' => SponsorsOverview::class,
         'contact-information' => ContactInformation::class,
         'normal-text' => NormalText::class,
-        'news-preview' => NewsPreview::class
+        'news-preview' => NewsPreview::class,
+        'news-overview' => NewsOverview::class
     ];
 }
