@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
 /**
  * Class Post
@@ -80,5 +81,14 @@ class Post extends Model
      */
     public function path(): string {
         return '';
+    }
+
+    /**
+     * @param int $words
+     * @return string
+     */
+    public function excerpt(int $words = 10): string
+    {
+        return Str::words($this->content, $words);
     }
 }
