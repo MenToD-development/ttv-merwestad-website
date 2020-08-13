@@ -12,23 +12,45 @@
         {{ $content->title }}
       </h2>
 
-      <div class="w-full flex justify-between items-center">
+      <div class="w-full flex justify-between items-center flex-wrap">
+      @foreach ($posts as $post)
+
+      @if($loop->iteration % 3 === 0)
+        <div class="w-1/3 bg-white p-6 rounded shadow-sm"></div>
+      @else
         <div class="w-1/3 bg-white rounded shadow-sm mr-6">
+      @endif
+
+      @if ($post->image)
           <div class="w-full h-48 bg-yellow-100">
             {{-- @todo image --}}
           </div>
+      @endif
           <div class="p-6">
             <span class="text-black text-lg md:text-xl font-serif block mt-3">
-              Titel van het nieuwsbericht
+              {{ $post->title }}
             </span>
             <span class="block text-primary-normal text-opacity-75 text-xs md:text-sm font-sans mb-6">
-              Menno Tempelaar - 7 minuten geleden
+              {{ $post->author->name }} - {{ $post->published_at->diffForHumans() }}
             </span>
+            <div class="prose mb-6">
+              <p>
+                {{ $post->excerpt() }}
+              </p>
+            </div>
+            <a href="{{ $post->path() }}" title="Nieuwsbericht: {{ $post->title }}"
+               class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center justify-center px-4 rounded">
+              <i class="fas fa-arrow-alt-circle-right text-white text-md md:text-lg mr-3"></i>
+              <span class="inline-block font-sans font-bold text-base text-white">
+                Lees verder
+              </span>
+            </a>
           </div>
+
+
         </div>
-        <div class="w-1/3 bg-white p-6 rounded shadow-sm mr-6"></div>
-        <div class="w-1/3 bg-white p-6 rounded shadow-sm"></div>
-      </div>
+
+      @endforeach
     </div>
   </div>
 </div>

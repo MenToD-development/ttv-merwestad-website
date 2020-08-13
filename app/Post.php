@@ -87,8 +87,8 @@ class Post extends Model
      * @param int $words
      * @return string
      */
-    public function excerpt(int $words = 10): string
+    public function excerpt(int $words = 25): string
     {
-        return Str::words($this->content, $words);
+        return Str::words(strip_tags($this->content), $words);
     }
 }

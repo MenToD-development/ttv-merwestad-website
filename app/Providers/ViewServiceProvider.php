@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\View\Composers\NewsComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use App\Http\View\Composers\MainMenuComposer;
@@ -40,6 +41,11 @@ class ViewServiceProvider extends ServiceProvider
         View::composer(
             'page.layout.sponsors-overview',
             SponsorsComposer::class
+        );
+
+        View::composer(
+            ['page.layout.news-overview'],
+            NewsComposer::class
         );
     }
 }
