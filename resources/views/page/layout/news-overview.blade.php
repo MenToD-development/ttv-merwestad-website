@@ -38,7 +38,7 @@
                 {{ $post->excerpt() }}
               </p>
             </div>
-            <a href="{{ $post->path() }}" title="Nieuwsbericht: {{ $post->title }}"
+            <a href="{{ $post->path($overviewPage) }}" title="Nieuwsbericht: {{ $post->title }}"
                class="bg-primary-normal hover:bg-primary-hover h-10 inline-flex items-center justify-center px-4 rounded">
               <i class="fas fa-arrow-alt-circle-right text-white text-md md:text-lg mr-3"></i>
               <span class="inline-block font-sans font-bold text-base text-white">

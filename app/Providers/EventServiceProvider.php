@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Events\PageSaved;
+use App\Events\PostSaved;
 use App\Listeners\GenerateWebsiteRoutes;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -21,6 +22,9 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
         PageSaved::class => [
+            GenerateWebsiteRoutes::class
+        ],
+        PostSaved::class => [
             GenerateWebsiteRoutes::class
         ]
     ];

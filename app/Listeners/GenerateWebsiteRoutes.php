@@ -22,10 +22,10 @@ class GenerateWebsiteRoutes
     /**
      * Handle the event.
      *
-     * @param  PageSaved  $event
+     * @param  mixed  $event
      * @return void
      */
-    public function handle(PageSaved $event)
+    public function handle($event)
     {
         Artisan::call('website:routes');
     }
