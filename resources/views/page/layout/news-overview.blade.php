@@ -49,8 +49,9 @@
 
 
         </div>
-
-      @endforeach
+        @endforeach
+        
+      </div>
     </div>
   </div>
 </div>
