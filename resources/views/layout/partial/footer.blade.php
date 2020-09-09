@@ -66,6 +66,11 @@
          </a>
        </li>
        <li class="my-2">
+         <a href="{{ url('/documents/Merwestad-aanmeldingshulp-2020.pdf') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
+           Aanmeldingshulp document
+         </a>
+       </li>
+       <li class="my-2">
          <a href="{{ url('/documents/Mer2018-05-23-Privacy-Policy.pdf') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
            Privacyverklaring
          </a>
@@ -89,7 +94,7 @@
       <br />
       <span class="block text-white text-2xl font-serif mb-4">Openingstijden</span>
       <span class="inline-block w-24 text-base font-sans text-white">Dinsdag</span>
-      <span class="inline-block text-base font-sans text-white">19:30 - 22:00</span><br />
+      <span class="inline-block text-base font-sans text-white">19:30 - 23:00</span><br />
       <span class="inline-block w-24 text-base font-sans text-white">Donderdag</span>
       <span class="inline-block text-base font-sans text-white">19:30 - 22:00</span><br />
     </div>
