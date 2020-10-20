@@ -103,7 +103,7 @@
           Dinsdag
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          19:30 - 23:00
+          19:30 - 22:00
         </span>
       </div> 
       <div class="flex">
