@@ -12,7 +12,7 @@
         {{ $content->title }}
       </h2>
 
-      <div class="w-full flex justify-start items-center flex-wrap">
+      <div class="w-full flex justify-start items-stretch flex-wrap">
       @foreach ($posts as $post)
 
       @if($loop->iteration % 3 === 0)
