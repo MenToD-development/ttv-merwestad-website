@@ -15,7 +15,7 @@
       @php($featured = $content->post($content->featured))
 
       <div class="flex flex-col lg:flex-row lg:items-stretch">
-        <div class="w-full lg:w-2/4 xl:w-1/3 p-3">
+        <div class="w-full lg:w-3/4 p-3">
           <div class="bg-white w-auto h-full overflow-y-hidden p-6 relative shadow">
             <span class="rounded py-1 px-2 md:py-2 md:px-4 bg-secondary-normal">
               <span class="text-xs md:text-sm font-bold font-sans text-primary-normal">
