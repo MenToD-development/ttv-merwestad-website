@@ -14,7 +14,7 @@
 
       @php($featured = $content->post($content->featured))
 
-      <div class="flex flex-col lg:flex-row lg:items-stretch">
+      <div class="flex flex-col justify-center lg:flex-row lg:items-stretch">
         <div class="w-full lg:w-3/4 p-3">
           <div class="bg-white w-auto h-full overflow-y-hidden p-6 relative shadow">
             <span class="rounded py-1 px-2 md:py-2 md:px-4 bg-secondary-normal">
@@ -40,13 +40,6 @@
 {{--              </a>--}}
             </div>
           </div>
-        </div>
-        <div class="w-full lg:w-2/4 xl:w-2/3 p-3">
-          @php($posts = $content->postsWithout($content->featured))
-
-          @foreach ($posts as $post)
-
-          @endforeach
         </div>
       </div>
       <div class="flex justify-center mt-10">
