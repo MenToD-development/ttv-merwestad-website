@@ -62,7 +62,7 @@
      <ul>
        <li class="my-2">
          <a href="{{ url('/documents/Merwestad-inschrijvingsformulier-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
-           Aanmeldingsformulier
+           Inschrijvingsformulier
          </a>
        </li>
        <li class="my-2">
