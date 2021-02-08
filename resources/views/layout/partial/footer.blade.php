@@ -61,12 +61,12 @@
      <span class="inline-block text-white text-2xl font-serif mb-4">Documenten</span>
      <ul>
        <li class="my-2">
-         <a href="{{ url('/documents/Mer2018-06-15-Aanmeldingsformulier-2018-2019.pdf') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
+         <a href="{{ url('/documents/Merwestad-inschrijvingsformulier-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
            Aanmeldingsformulier
          </a>
        </li>
        <li class="my-2">
-         <a href="{{ url('/documents/Merwestad-aanmeldingshulp-2020.pdf') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
+         <a href="{{ url('/documents/Merwestad-aanmeldingshulp-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
            Aanmeldingshulp document
          </a>
        </li>
