@@ -5,32 +5,58 @@
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal w-1/3 text-base xl:text-lg font-bold">
           Adres
-        </span> 
+        </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           {{ Setting::get('address') }}
         </span>
-      </div> 
+      </div>
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Postcode
-        </span> 
+        </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           {{ Setting::get('zipcode') }}
         </span>
-      </div> 
+      </div>
       <div class="flex mb-10">
         <span class="inline-block font-serif text-primary-normal w-1/3 text-base xl:text-lg font-bold">
           Woonplaats
-        </span> 
+        </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           {{ Setting::get('residence') }}
         </span>
-      </div> 
+      </div>
+
+      <h2>Aangepaste vakantie training locatie</h2>
+      <div class="flex">
+        <span class="inline-block font-serif text-primary-normal w-1/3 text-base xl:text-lg font-bold">
+          Adres
+        </span>
+        <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
+          Professor Waterinklaan 43A
+        </span>
+      </div>
+      <div class="flex">
+        <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
+          Postcode
+        </span>
+        <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
+          3312 KM
+        </span>
+      </div>
+      <div class="flex mb-10">
+        <span class="inline-block font-serif text-primary-normal w-1/3 text-base xl:text-lg font-bold">
+          Woonplaats
+        </span>
+        <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
+          Dordrecht
+        </span>
+      </div>
 
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Algemeen
-        </span> 
+        </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           <a href="mailto:info@ttvmerwestad.nl" style="text-decoration: underline;">
             info@ttvmerwestad.nl
@@ -40,17 +66,17 @@
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Voorzitter
-        </span> 
+        </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           <a href="mailto:voorzitter@ttvmerwestad.nl" style="text-decoration: underline;">
             voorzitter@ttvmerwestad.nl
           </a>
         </span>
-      </div> 
+      </div>
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Webmaster
-        </span> 
+        </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
           <a href="mailto:webmaster@ttvmerwestad.nl" style="text-decoration: underline;">
             webmaster@ttvmerwestad.nl
@@ -89,7 +115,7 @@
       </div>
       <span class="text-xl text-black font-serif">
         Openingstijden
-      </span> 
+      </span>
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Maandag
@@ -103,9 +129,9 @@
           Dinsdag
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          gesloten
+          20:00 - 22:00 uur
         </span>
-      </div> 
+      </div>
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Woensdag
