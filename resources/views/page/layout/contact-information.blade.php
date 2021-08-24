@@ -27,32 +27,6 @@
         </span>
       </div>
 
-      <h2>Aangepaste vakantie training locatie</h2>
-      <div class="flex">
-        <span class="inline-block font-serif text-primary-normal w-1/3 text-base xl:text-lg font-bold">
-          Adres
-        </span>
-        <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          Professor Waterinklaan 43A
-        </span>
-      </div>
-      <div class="flex">
-        <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
-          Postcode
-        </span>
-        <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          3312 KM
-        </span>
-      </div>
-      <div class="flex mb-10">
-        <span class="inline-block font-serif text-primary-normal w-1/3 text-base xl:text-lg font-bold">
-          Woonplaats
-        </span>
-        <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          Dordrecht
-        </span>
-      </div>
-
       <div class="flex">
         <span class="inline-block font-serif text-primary-normal  w-1/3 text-base xl:text-lg font-bold">
           Algemeen
