@@ -77,7 +77,7 @@ class WebsiteRoutes extends Command
                 $this->route(
                     $post->path($newsPage),
                     'PostController',
-                    $post->id
+                    "post-".$post->id
                 );
             });
     }
