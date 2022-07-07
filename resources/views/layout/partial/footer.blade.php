@@ -87,9 +87,9 @@
       <span class="block text-base font-sans text-white">Maria Montessorilaan 3</span>
       <span class="block text-base font-sans text-white">3312 KJ, Dordrecht</span>
       <br />
-      <a href="mailto:info@merwestad.nl"
+      <a href="mailto:info@ttvmerwestad.nl"
          class="block text-base font-sans text-white underline">
-        info@merwestad.nl
+        info@ttvmerwestad.nl
       </a>
       <br />
       <span class="block text-white text-2xl font-serif mb-4">Openingstijden</span>
