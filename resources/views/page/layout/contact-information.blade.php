@@ -103,7 +103,7 @@
           Dinsdag
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          19:30 tot 23:00
+          20:00 tot 22:00
         </span>
       </div>
       <div class="flex">
@@ -119,7 +119,7 @@
           Donderdag
         </span>
         <span class="inline-block font-sans text-black w-2/3 text-base xl:text-lg">
-          19:30 tot 22:00
+          gesloten i.v.m. vakantie periode
         </span>
       </div>
       <div class="flex">
