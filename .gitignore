@@ -1,16 +1,23 @@
-/node_modules
+# Laravel
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
 .env
 .env.backup
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 auth.json
-npm-debug.log
-yarn-error.log
+
+# Editors
 /.idea
 /.vscode
+
+# Composer
+/vendor
+
+# NPM
+/node_modules
+npm-debug.log
+yarn-error.log
