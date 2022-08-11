@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>T.T.V. Merwestad</title>
+
+        <!-- Scripts and CSS import -->
+        @vite
     </head>
     <body class="antialiased">
 
