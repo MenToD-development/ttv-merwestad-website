@@ -5,7 +5,16 @@ module.exports = {
 		'./resources/**/*.vue',
 	],
 	theme: {
-		extend: {},
+		extend: {
+      "colors": {
+        "primary": "#3185FC",
+      },
+      "fontFamily": {
+        "serif": ["Roboto Slab", "serif"]
+      }
+    },
 	},
-	plugins: [],
+	plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
