@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Association\CompetitionController;
 use App\Http\Controllers\Association\RecreationController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,8 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', WelcomeController::class)
+Route::get('', WelcomeController::class)
     ->name('welcome');
 
-Route::get('/vereniging/recreatief', RecreationController::class)
-    ->name('association.recreation');
+Route::name('association.')
+    ->prefix('vereniging')
+    ->group(function () {
+        Route::get('recreatief', RecreationController::class)
+            ->name('recreation');
+
+        Route::get('competitie', CompetitionController::class)
+            ->name('competition');
+    });
+
+Route::get('contact', ContactController::class)
+    ->name('contact');

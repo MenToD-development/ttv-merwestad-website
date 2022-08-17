@@ -55,11 +55,11 @@
                         </h3>
                         <p class="mt-4 text-base text-slate-500">
                             Wil je op een wat meer competitief niveau tafeltennissen? Bij T.T.V. Merwestad kun je
-                            ook meespelen in de competitie van de NTTB regio West.
+                            ook meespelen in de competitie van de NTTB-regio West.
                         </p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="#" class="text-base font-medium text-blue-500 hover:text-blue-600">
+                        <a href="{{ route('association.competition') }}" class="text-base font-medium text-blue-500 hover:text-blue-600">
                             Lees meer over de competitie<span aria-hidden="true"> &rarr;</span>
                         </a>
                     </div>
@@ -94,8 +94,12 @@
             <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
                 <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
                     <h2 class="text-xl leading-6 font-semibold text-blue-500">Lidmaatschapsprijzen</h2>
-                    <p class="text-3xl tracking-tight font-bold text-slate-800 sm:text-4xl sm:tracking-tight lg:text-5xl lg:tracking-tight">De juiste prijs voor u, wie u ook bent</p>
-                    <p class="text-xl text-gray-400">Een kleine bijdrage waarvoor gezelligheid en beweging in de plaats komt.</p>
+                    <p class="text-3xl tracking-tight font-bold text-slate-800 sm:text-4xl sm:tracking-tight lg:text-5xl lg:tracking-tight">
+                        De juiste prijs voor jou, wie je ook bent
+                    </p>
+                    <p class="text-xl text-slate-400">
+                        Een kleine bijdrage waarvoor gezelligheid en beweging in de plaats komt.
+                    </p>
                 </div>
             </div>
         </div>
@@ -129,6 +133,16 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
+                                        <p class="ml-3 text-base text-slate-700">Lid van de vereniging</p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <p class="ml-3 text-base text-slate-700">Vrij spelen op al onze speelavonden</p>
                                     </li>
 
@@ -139,7 +153,9 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-base text-gray-700">Toegang en stemrecht bij de ledenvergaderingen</p>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Toegang tot alle evenementen van de vereniging
+                                        </p>
                                     </li>
 
                                     <li class="flex items-start">
@@ -149,13 +165,16 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-base text-gray-700">Toegang tot alle evenementen van de vereniging</p>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Toegang en stemrecht bij de ledenvergaderingen
+                                        </p>
                                     </li>
+
                                 </ul>
                                 <div class="rounded-md shadow">
                                     <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
                                        aria-describedby="tier-standard">
-                                        Get started
+                                        Meld je aan
                                     </a>
                                 </div>
                             </div>
@@ -187,6 +206,16 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
+                                        <p class="ml-3 text-base text-gray-700">Indeling in een team</p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <p class="ml-3 text-base text-gray-700">Inschrijving NTTB</p>
                                     </li>
 
@@ -197,7 +226,7 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-base text-gray-700">Teamindeling</p>
+                                        <p class="ml-3 text-base text-gray-700">Spelen van wedstrijden</p>
                                     </li>
 
                                     <li class="flex items-start">
@@ -207,12 +236,12 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-base text-gray-700">Competitie wedstrijden spelen</p>
+                                        <p class="ml-3 text-base text-gray-700">Invallen bij andere teams (wanneer mogelijk)</p>
                                     </li>
                                 </ul>
                                 <div class="rounded-md shadow">
                                     <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600" aria-describedby="tier-standard">
-                                        Get started
+                                        Meld je aan
                                     </a>
                                 </div>
                             </div>

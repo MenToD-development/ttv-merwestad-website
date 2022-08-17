@@ -43,7 +43,7 @@
                                             </p>
                                         </div>
                                     </a>
-                                    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-slate-50">
+                                    <a href="{{ route('association.competition') }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-slate-50">
                                         <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white sm:h-12 sm:w-12">
                                             <x-icons.trending-up class="h-6 w-6 stroke-white"></x-icons.trending-up>
                                         </div>

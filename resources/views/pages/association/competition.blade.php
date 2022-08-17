@@ -34,59 +34,62 @@
             <div class="text-lg max-w-prose mx-auto">
                 <h1>
                     <span class="block text-lg text-center text-blue-500 font-semibold">
-                        Vereniging
+                        Vereniging & NTTB
                     </span>
                     <span class="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight text-slate-900 sm:text-4xl sm:tracking-tight">
-                        Recreatie spel
+                        Competitie spelen
                     </span>
                 </h1>
                 <p class="mt-8 text-xl text-slate-500 leading-8">
-                    Het is altijd mogelijk om alleen naar T.T.V. Merwestad te komen. Bij onze speelavonden is het de
-                    gewoonte om iedereen te laten spelen. Als het erg druk is wordt er al gauw over gegaan op een
-                    aantal dubbel tafels zodat er 4 personen tegelijkertijd per tafel kunnen spelen. Zo zijn er altijd
-                    tafels en spelers vrij om tegen te spelen.
+                    Wil je progressie zijn in je tafeltennis? Wil je jezelf meten met andere spelers van andere
+                    verenigingen? Of wil je het competitieve onderdeel van de sport leren kennen? Alles is mogelijk bij
+                    T.T.V. Merwestad.
                 </p>
             </div>
             <div class="mt-6 prose prose-blue prose-lg text-slate-500 mx-auto">
                 <p>
-                    Bij T.T.V. Merwestad hebben we momenteel twee speelavonden in de week. Deze zijn op de dinsdag
-                    avond en de donderdag avond (<a href="#">openingstijden kunnen verschillen</a>).
-                    Op beide avonden kan het zo zijn dat er in de competitie periode thuis wedstrijden plaatsvinden,
-                    maar er blijven altijd tafels over om vrij / recreatief te spelen. Op de speelavonden worden er
-                    enkel gespeeld als zowel dubbel. Dit bepalen de spelers zelf en onderling waardoor het ook zeer
-                    toegankelijk is voor mensen die alleen komen.
+                    Zodra je lid bent van de vereniging heb je de mogelijkheid om mee te spelen in de
+                    <a target="_blank" href="https://west.nttb.nl/">NTTB-competitie regio West</a>. Hiervoor kun je je
+                    per competitie aanmelden en inschrijven bij T.T.V. Merwestad. Hiervoor betaal je per competitie die
+                    je meespeelt één bedrag vooraf dat de competitie begint. De vereniging zal jou vervolgens indelen
+                    in een team (maar niet als je dit zelf al hebt geregeld) en vervolgens inschrijven bij de NTTB.
                 </p>
                 <figure>
                     <img class="w-full rounded-lg" src="{{ url('assets/tafeltenniszaal-overzicht.jpg') }}" alt="" width="1310" height="873">
                     <figcaption>Een blik in onze zaal tijdens een onderlinge competitieavond.</figcaption>
                 </figure>
-                <h2>Toegankelijk voor iedereen</h2>
+                <h2>Competitie stijlen</h2>
                 <p>
-                    Het maakt niet uit of je al ervaring hebt met tafeltennis of niet. Er zijn genoeg spelers om je de
-                    beginselen van het tafeltennis uit te leggen en met je te trainen. Daarnaast zul je door veel te
-                    spelen alles vanzelf oppakken. Waarbij je altijd nog de optie hebt om toch wel competitie te gaan
-                    spelen.
+                    Bij de NTTB heb je twee verschillende competitie stijlen (Regulier & DUO). Hieronder een korte
+                    omschrijving van de competitie stijlen:
                 </p>
-                <h2>Leeftijd</h2>
+                <h3>Regulier</h3>
                 <p>
-                    Momenteel hebben wij binnen onze vereniging geen jeugd afdeling. Hier zijn namelijk regels aan
-                    verbonden voor een vereniging. We hebben hier nog niet veel animo voor ontvangen en daarvoor hebben
-                    we ervoor gekozen om iedereen welkom te heten boven de 16 jaar.
+                    De reguliere competitie bestaat al vanaf het begin. Hierbij speel je in teams van 3 personen.
+                    Waardoor je uiteindelijk per wedstrijd 10 matches krijgt. In totaal ben je per wedstrijd met 6
+                    personen en speel je tegen iedereen één enkel en een dubbel. Dit houdt in dat je per persoon
+                    dus 3 of 4 matches speelt per wedstrijd.
                 </p>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="bg-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-lg font-semibold text-blue-500">Kennis maken</h2>
-                <p class="mt-1 text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl lg:tracking-tight">Kom een keer langs!</p>
-                <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-                    Je kunt 3 keer bij ons langskomen en gratis mee spelen om te kijken of de vereniging je bevalt.
-                    Daarna vragen we je pas om lid te worden.
+                <blockquote>
+                    <p>
+                        Doordat veel competitie spelende leden hebben geklaagd over de lengte van een wedstrijdavond
+                        zijn ze met de DUO competitie begonnen.
+                    </p>
+                </blockquote>
+                <h3>DUO</h3>
+                <p>
+                    De DUO competitie daarentegen bestaat nog niet zo lang, maar is wel erg in trek. Deze competitie
+                    speel je met twee personen per wedstrijd. Dit houdt in dat de wedstrijden gehalveerd zijn en dus op
+                    5 matches per wedstrijd vallen. Je speelt dus allebei 2 enkels en één dubbel. In totaal speel je dus
+                    3 matches op een wedstrijd avond.
+                </p>
+                <h2>Wedstrijden</h2>
+                <p>
+                    In de competitie hebben we twee seizoenen. Het voorjaar seizoen en het najaar seizoen. Deze
+                    seizoenen lopen ongeveer van januari tot en met april en september tot en met november. Één seizoen
+                    is bij onze vereniging één competitie. De wedstrijden worden doordeweeks 's avonds gespeeld. Elke
+                    vereniging heeft een eigen speeldag. Bij ons zijn de dinsdag avonden voor de reguliere competitie
+                    en de donderdag avonden voor de DUO competitie.
                 </p>
             </div>
         </div>
@@ -105,10 +108,10 @@
                     <div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
                         <div class="flex-1 bg-white px-6 py-8 lg:p-12">
                             <h3 class="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
-                                Recreatie lid
+                                NTTB Competitie
                             </h3>
                             <p class="mt-6 text-base text-gray-500">
-                                Spelend lid van de vereniging en toegang tot alle speelavonden, evenementen <br />en andere gezellige uitjes.
+                                Spelend lid in de NTTB competitie in een team van T.T.V. Merwestad
                             </p>
                             <div class="mt-8">
                                 <div class="flex items-center">
@@ -123,7 +126,7 @@
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-sm text-gray-700">Lid van de vereniging</p>
+                                        <p class="ml-3 text-sm text-gray-700">Indeling in een team</p>
                                     </li>
 
                                     <li class="flex items-start lg:col-span-1">
@@ -133,7 +136,7 @@
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-sm text-gray-700">Vrij spelen op al onze speelavonden</p>
+                                        <p class="ml-3 text-sm text-gray-700">Inschrijving NTTB</p>
                                     </li>
 
                                     <li class="flex items-start lg:col-span-1">
@@ -143,9 +146,7 @@
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-sm text-gray-700">
-                                            Toegang tot alle evenementen van de vereniging
-                                        </p>
+                                        <p class="ml-3 text-sm text-gray-700">Spelen van wedstrijden</p>
                                     </li>
 
                                     <li class="flex items-start lg:col-span-1">
@@ -155,25 +156,23 @@
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                             </svg>
                                         </div>
-                                        <p class="ml-3 text-sm text-gray-700">
-                                            Toegang en stemrecht bij de ledenvergaderingen
-                                        </p>
+                                        <p class="ml-3 text-sm text-gray-700">Invallen bij andere teams (wanneer mogelijk)</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="py-8 px-6 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-                            <p class="text-lg leading-6 font-medium text-gray-900">Maandelijks te betalen</p>
+                            <p class="text-lg leading-6 font-medium text-gray-900">Eenmalig per competitie seizoen</p>
                             <div class="mt-4 flex items-center justify-center text-5xl tracking-tight font-bold text-gray-900">
                                 <span>
-                                    € 10,-
+                                    € 27,50
                                 </span>
                                 <span class="ml-3 text-xl font-medium text-gray-500 tracking-normal">
                                     EUR
                                 </span>
                             </div>
                             <p class="mt-4 text-sm">
-                                <a href="#" class="font-medium text-gray-500 underline"> Lees meer over onze lidmaatschapsbeleid </a>
+                                <a href="#" class="font-medium text-gray-500 underline"> Lees meer over ons competitiebeleid </a>
                             </p>
                             <div class="mt-6">
                                 <div class="rounded-md shadow">
@@ -188,23 +187,4 @@
             </div>
         </div>
     </div>
-
-
-    <div class="bg-blue-500">
-        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 class="text-3xl tracking-tight font-bold text-white sm:text-4xl sm:tracking-tight">
-                <span class="block text-2xl">Interesse gekregen?</span>
-                <span class="block">Kom een keer langs bij ons</span>
-            </h2>
-            <p class="mt-4 text-lg leading-6 text-indigo-200">
-                Om te kijken of het recreatief spelen je bevalt, kun je bij ons mee komen spelen op één van onze
-                speelavonden.
-            </p>
-            <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-500 bg-white hover:bg-indigo-50 sm:w-auto">
-                Bekijk onze agenda
-            </a>
-        </div>
-    </div>
-
 @endsection
-
