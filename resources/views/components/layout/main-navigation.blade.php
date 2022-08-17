@@ -70,7 +70,7 @@
                         </popover-panel>
                     </transition>
                 </popover>
-                <a href="#" class="text-base font-medium text-slate-500 hover:text-slate-900">
+                <a href="{{ route('contact') }}" class="text-base font-medium text-slate-500 hover:text-slate-900">
                     Contact
                 </a>
 {{--                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Docs </a>--}}
@@ -138,14 +138,21 @@
                     </div>
                     <div class="mt-6">
                         <nav class="grid grid-cols-1 gap-7">
-{{--                            <a v-for="solution in solutions" :key="solution.name" :href="solution.href" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">--}}
-{{--                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">--}}
-{{--                                    <component :is="solution.icon" class="h-6 w-6" aria-hidden="true" />--}}
-{{--                                </div>--}}
-{{--                                <div class="ml-4 text-base font-medium text-gray-900">--}}
-{{--                                    {{ solution.name }}--}}
-{{--                                </div>--}}
-{{--                            </a>--}}
+                            <a href="{{ route('association.recreation') }}" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
+                                    <x-icons.table-tennis class="h-6 w-6"></x-icons.table-tennis>
+                                </div>
+                                <div class="ml-4 text-base font-medium text-gray-900">
+                                    Regulier spelen
+                                </div>
+                            </a><a href="{{ route('association.competition') }}" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
+                                    <x-icons.trending-up class="h-6 w-6"></x-icons.trending-up>
+                                </div>
+                                <div class="ml-4 text-base font-medium text-gray-900">
+                                    Regulier spelen
+                                </div>
+                            </a>
                         </nav>
                     </div>
                 </div>
@@ -153,6 +160,9 @@
                     <div class="grid grid-cols-2 gap-4">
                         <a href="{{ route('welcome') }}" class="text-base font-medium text-slate-800 hover:text-slate-600">
                             Welkom
+                        </a>
+                        <a href="{{ route('contact') }}" class="text-base font-medium text-slate-800 hover:text-slate-600">
+                            Contact
                         </a>
 
 {{--                        <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Docs </a>--}}
