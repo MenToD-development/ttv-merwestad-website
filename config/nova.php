@@ -162,14 +162,14 @@ return [
     |
     */
 
-     'brand' => [
-         'logo' => resource_path('/assets/svg/ttv-merwestad-logo.svg'),
+    'brand' => [
+        'logo' => resource_path('/assets/svg/ttv-merwestad-logo.svg'),
 
-         'colors' => [
-             "400" => "37, 99, 235",
-             "500" => "59, 130, 246",
-         ]
-     ],
+        'colors' => [
+            '400' => '37, 99, 235',
+            '500' => '59, 130, 246',
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------

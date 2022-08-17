@@ -9,7 +9,7 @@ class MainNavigation
     /**
      *  Constructs a new MainNavigation view model.
      *
-     *  @param  string $applicationName The application name.
+     *  @param  string  $applicationName The application name.
      */
     public function __construct(
         public string $applicationName,
@@ -18,7 +18,8 @@ class MainNavigation
         $this->mobileMenuModel = $mobileMenuModel ?? $this->mobileMenuModel();
     }
 
-    protected function mobileMenuModel(): MobileMenu {
+    protected function mobileMenuModel(): MobileMenu
+    {
         return new MobileMenu(
             $this->applicationName,
         );

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Association;
 
+use App\Http\Controllers\Controller;
 use App\View\Models\MainLayout;
 use Illuminate\Contracts\View\View;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class RecreationController extends Controller
@@ -14,7 +14,7 @@ class RecreationController extends Controller
         $model = new MainLayout(
             config('app.name'),
             'Recreatief spelen bij tafeltennisvereniging Merwestad in '
-                . 'Dordrecht.',
+                .'Dordrecht.',
         );
 
         return view(

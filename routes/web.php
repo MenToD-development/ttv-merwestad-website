@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\Association\RecreationController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Association\RecreationController;
 
 /*
 |--------------------------------------------------------------------------
