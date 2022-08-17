@@ -113,7 +113,7 @@
         </div>
         <div class="mt-12 border-t border-gray-200 pt-8 flex justify-between">
             <p class="inline-block text-base text-gray-400 xl:text-center">&copy; {{ date('Y') }} {{ config('app.name') }}, Inc. Alle rechten voorbehouden.</p>
-            <p class="inline-block text-base text-gray-400 xl:text-center">Ontwikkeld door Bondgenoot</p>
+            <p class="inline-block text-base text-gray-400 xl:text-center">Ontwikkeling van Bondgenoot</p>
         </div>
     </div>
 </footer>

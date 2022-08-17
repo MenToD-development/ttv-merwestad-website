@@ -1,9 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<popover class="relative bg-white">
+<popover class="fixed w-screen top-0 left-0 z-50 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a class="flex justify-start content-center" href="#">
+                <a class="flex justify-start content-center" href="{{ route('welcome') }}">
                     <x-icons.table-tennis class="w-8 h-8 mr-3 fill-blue-500" />
                     <span class="pt-1 inline-block font-serif text-slate-700 font-black text-lg">
                         {{ $model->applicationName }}
