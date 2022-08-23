@@ -100,8 +100,22 @@
 {{--                </Popover>--}}
             </popover-group>
             <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Inloggen </a>
-                <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-600"> Registreren </a>
+                @auth
+                    <a href="{{ route('my-merwestad.dashboard') }}">
+                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-blue-500 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
+                            Mijn Merwestad
+                            <img class="ml-2 h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        </button>
+                    </a>
+                @endauth
+                @guest
+                    <a href="{{ route('my-merwestad.login') }}" class="whitespace-nowrap text-base font-medium text-slate-500 hover:text-slate-900">
+                        Inloggen
+                    </a>
+                    <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-600">
+                        Registreren
+                    </a>
+                @endguest
             </div>
         </div>
     </div>
@@ -179,7 +193,9 @@
                         <p class="mt-6 text-center text-base font-medium text-slate-500">
                             Heeft u al een account?
                             {{ ' ' }}
-                            <a href="#" class="text-blue-500 hover:text-blue-400"> Log hier in </a>
+                            <a href="{{ route('my-merwestad.login') }}" class="text-blue-500 hover:text-blue-400">
+                                Log hier in
+                            </a>
                         </p>
                     </div>
                 </div>
