@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
+<head class="h-full bg-white">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,7 @@
     @vite
 
 </head>
-<body class="antialiased">
+<body class="antialiased h-full">
 
 @yield('body')
 

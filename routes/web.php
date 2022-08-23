@@ -2,7 +2,11 @@
 
 use App\Http\Controllers\Association\CompetitionController;
 use App\Http\Controllers\Association\RecreationController;
+use App\Http\Controllers\Auth\AuthenticateSessionController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\Merwestad\DashboardController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +36,24 @@ Route::name('association.')
 
 Route::get('contact', ContactController::class)
     ->name('contact');
+
+Route::name('my-merwestad.')
+    ->prefix('mijn-merwestad')
+    ->group(function () {
+
+        // Login
+        Route::get('inloggen', LoginController::class)
+            ->name('login');
+        Route::post('inloggen', AuthenticateSessionController::class);
+
+        // Registreren
+
+        Route::middleware('auth')
+            ->group(function () {
+                Route::get('', DashboardController::class)
+                    ->name('dashboard');
+
+                Route::post('uitloggen', LogoutController::class)
+                   ->name('logout');
+            });
+    });
