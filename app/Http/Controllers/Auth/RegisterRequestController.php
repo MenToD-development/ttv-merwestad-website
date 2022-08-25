@@ -14,6 +14,7 @@ class RegisterRequestController extends Controller
         $event = new RegistrationReceivedEvent(
             $request->get('name'),
             $request->get('email'),
+            $request->get('notice') ?? null,
         );
 
         Event::dispatch($event);

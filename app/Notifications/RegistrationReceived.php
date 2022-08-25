@@ -14,6 +14,7 @@ class RegistrationReceived extends Notification
     public function __construct(
         public string $name,
         public string $email,
+        public ?string $notice = null,
     ) { }
 
     public function via(mixed $notifiable): array
@@ -31,7 +32,8 @@ class RegistrationReceived extends Notification
                 . 'via de website van T.T.V. Merwestad. De naam van de '
                 . 'persoon is ' . $this->name . ' en het e-mailadres is '
                 . $this->email . '.',
-            );
+            )
+            ->lineIf($this->notice, $this->notice);
     }
 
     public function toArray(mixed $notifiable): array

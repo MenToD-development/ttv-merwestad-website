@@ -44,6 +44,8 @@
             <x-form.email-input label="Je e-mailadres" name="email" id="email"
                                 :required="true"></x-form.email-input>
 
+            <x-form.textarea-input label="Opmerking(en)" name="notice" id="notice"></x-form.textarea-input>
+
             <div>
                 <button type="submit"
                         class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">

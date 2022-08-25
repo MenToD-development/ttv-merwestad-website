@@ -12,6 +12,10 @@ class NotifyUsersAboutNewRegistrationForm
     {
         $user = User::findOrFail(1);
 
-        $user->notify(new RegistrationReceived($event->name, $event->email));
+        $user->notify(new RegistrationReceived(
+            $event->name,
+            $event->email,
+            $event->notice,
+        ));
     }
 }
