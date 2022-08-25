@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 
-class LoadingPagesTest extends TestCase
+class LoadingPublicPagesTest extends TestCase
 {
     /**
      * @test
@@ -33,6 +33,20 @@ class LoadingPagesTest extends TestCase
     public function it_has_a_contact_page()
     {
         $this->get(route('contact'))
+            ->assertStatus(200);
+    }
+
+    /** @test */
+    public function it_has_a_login_page()
+    {
+        $this->get(route('my-merwestad.login'))
+            ->assertStatus(200);
+    }
+
+    /** @test */
+    public function it_has_a_register_page()
+    {
+        $this->get(route('my-merwestad.register'))
             ->assertStatus(200);
     }
 }
