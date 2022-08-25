@@ -8,14 +8,6 @@
             <div class="mx-auto w-full max-w-sm lg:w-96">
                 @yield('content')
             </div>
-            <div class="mt-2 mb-10 mx-auto">
-                <p class="mt-2 text-sm text-slate-600">
-                    Of
-                    <a href="{{ route('welcome') }}" class="font-medium text-blue-500 hover:text-blue-400">
-                        ga terug naar de website.
-                    </a>
-                </p>
-            </div>
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
                 <div class="border-t border-gray-200 py-8 text-sm text-gray-500 text-center sm:text-left">
                     <span class="block sm:inline">

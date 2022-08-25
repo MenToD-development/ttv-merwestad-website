@@ -108,4 +108,12 @@
             </form>
         </div>
     </div>
+    <div class="mt-2 mb-10 mx-auto">
+        <p class="mt-2 text-sm text-slate-600">
+            Of
+            <a href="{{ route('welcome') }}" class="font-medium text-blue-500 hover:text-blue-400">
+                ga terug naar de website.
+            </a>
+        </p>
+    </div>
 @endsection

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\RegistrationCompleteController;
 use App\Http\Controllers\Association\CompetitionController;
 use App\Http\Controllers\Association\RecreationController;
 use App\Http\Controllers\Auth\AuthenticateSessionController;
@@ -52,6 +53,12 @@ Route::name('my-merwestad.')
         Route::get('registreren', RegisterController::class)
             ->name('register');
         Route::post('registreren', RegisterRequestController::class);
+
+        // Registreren succes
+        Route::get(
+            'registreren/succes',
+            RegistrationCompleteController::class,
+        )->name('registered');
 
         Route::middleware('auth')
             ->group(function () {
