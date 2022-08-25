@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\AuthenticateSessionController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\RegisterRequestController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Merwestad\DashboardController;
 use App\Http\Controllers\WelcomeController;
@@ -50,6 +51,7 @@ Route::name('my-merwestad.')
         // Registreren
         Route::get('registreren', RegisterController::class)
             ->name('register');
+        Route::post('registreren', RegisterRequestController::class);
 
         Route::middleware('auth')
             ->group(function () {

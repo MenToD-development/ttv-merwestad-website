@@ -17,4 +17,11 @@ return [
     'password' => 'Het ingevoerde wachtwoord is incorrect.',
     'throttle' => 'Te veel inlogpogingen. Probeer het opnieuw over :seconds seconden.',
 
+    'max' => [
+        'name' => 'De naam mag niet uit meer dan :max karakters bestaan.',
+    ],
+    'unique' => [
+        'email' => 'Dit e-mailadres is bij ons al bekend.',
+    ],
+
 ];

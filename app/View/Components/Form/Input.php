@@ -3,9 +3,9 @@
 namespace App\View\Components\Form;
 
 use Closure;
-use Illuminate\View\Component;
-use Illuminate\Contracts\View\View;
 use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
 
 abstract class Input extends Component
 {

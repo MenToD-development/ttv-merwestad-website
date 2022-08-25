@@ -31,7 +31,7 @@
             </div>
             <input id="{{ $id }}" name="{{ $name }}" type="email"
                    autocomplete="{{ $autoComplete }}" {{ $required ? 'required' : '' }}
-                   placeholder="{{ $placeholder }}"
+                   placeholder="{{ $placeholder }}" value="{{ old($name) }}"
                    class="focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 sm:text-sm border-slate-300 rounded-md">
         </div>
     </div>

@@ -8,8 +8,8 @@ use Illuminate\Contracts\View\View;
 
 final class EmailInput extends Input
 {
-     public function render(): View | Htmlable | string | Closure
-     {
-         return view('components.form.email-input');
-     }
+    public function render(): View | Htmlable | string | Closure
+    {
+        return view('components.form.email-input');
+    }
 }
