@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\Auth\RegistrationCompleteController;
 use App\Http\Controllers\Association\CompetitionController;
 use App\Http\Controllers\Association\RecreationController;
 use App\Http\Controllers\Auth\AuthenticateSessionController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\RegisterRequestController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\Merwestad\DashboardController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
@@ -47,6 +50,15 @@ Route::name('my-merwestad.')
         Route::post('inloggen', AuthenticateSessionController::class);
 
         // Registreren
+        Route::get('registreren', RegisterController::class)
+            ->name('register');
+        Route::post('registreren', RegisterRequestController::class);
+
+        // Registreren succes
+        Route::get(
+            'registreren/succes',
+            RegistrationCompleteController::class,
+        )->name('registered');
 
         Route::middleware('auth')
             ->group(function () {
