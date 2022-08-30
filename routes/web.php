@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\SendNewPasswordController;
+use App\Http\Controllers\Auth\ForgottenPasswordController;
 use App\Http\Controllers\Auth\RegistrationCompleteController;
 use App\Http\Controllers\Association\CompetitionController;
 use App\Http\Controllers\Association\RecreationController;
@@ -48,6 +50,11 @@ Route::name('my-merwestad.')
         Route::get('inloggen', LoginController::class)
             ->name('login');
         Route::post('inloggen', AuthenticateSessionController::class);
+
+        // Wachtwoord vergeten
+        Route::get('wachtwoord-vergeten', ForgottenPasswordController::class)
+            ->name('forgotten-password');
+        Route::post('wachtwoord-vergeten', SendNewPasswordController::class);
 
         // Registreren
         Route::get('registreren', RegisterController::class)

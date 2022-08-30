@@ -16,6 +16,6 @@ class RegisterController extends Controller
             'Registreer je bij T.T.V. Merwestad.',
         );
 
-        return view('pages.my-merwestad.register', compact('model'));
+        return view('pages.auth.register', compact('model'));
     }
 }

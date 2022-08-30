@@ -20,6 +20,6 @@ class RegistrationCompleteController extends Controller
             'Aanmelding succesvol verzonden.',
         );
 
-        return view('pages.my-merwestad.registered', compact('model'));
+        return view('pages.auth.registered', compact('model'));
     }
 }
