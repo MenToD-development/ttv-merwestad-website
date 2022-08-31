@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="text-sm">
-                        <a href="#" class="font-medium text-blue-500 hover:text-blue-400">
+                        <a href="{{ route('my-merwestad.forgotten-password') }}" class="font-medium text-blue-500 hover:text-blue-400">
                             Wachtwoord vergeten?
                         </a>
                     </div>

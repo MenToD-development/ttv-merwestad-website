@@ -3,11 +3,10 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class RegistrationReceived extends Notification
+class RegistrationReceivedNotification extends Notification
 {
     use Queueable;
 
@@ -15,7 +14,8 @@ class RegistrationReceived extends Notification
         public string $name,
         public string $email,
         public ?string $notice = null,
-    ) { }
+    ) {
+    }
 
     public function via(mixed $notifiable): array
     {
@@ -29,9 +29,9 @@ class RegistrationReceived extends Notification
             ->subject('Nieuwe aanmelding ontvangen')
             ->line(
                 'Er is een nieuwe aanmelding binnen gekomen '
-                . 'via de website van T.T.V. Merwestad. De naam van de '
-                . 'persoon is ' . $this->name . ' en het e-mailadres is '
-                . $this->email . '.',
+                .'via de website van T.T.V. Merwestad. De naam van de '
+                .'persoon is '.$this->name.' en het e-mailadres is '
+                .$this->email.'.',
             )
             ->lineIf($this->notice, $this->notice);
     }

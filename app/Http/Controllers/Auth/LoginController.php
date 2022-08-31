@@ -15,6 +15,6 @@ class LoginController extends Controller
             'Log in op jouw merwestad account',
         );
 
-        return view('pages.my-merwestad.login', compact('model'));
+        return view('pages.auth.login', compact('model'));
     }
 }

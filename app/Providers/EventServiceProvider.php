@@ -2,12 +2,12 @@
 
 namespace App\Providers;
 
-use Illuminate\Auth\Events\Registered;
+use App\Listeners\SendNewPassword;
+use App\Events\ChangedPasswordEvent;
 use App\Events\RegistrationReceivedEvent;
+use App\Events\RequestedNewPasswordEvent;
 use App\Listeners\NotifyUsersAboutNewRegistrationForm;
-use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Event;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -19,7 +19,13 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         RegistrationReceivedEvent::class => [
             NotifyUsersAboutNewRegistrationForm::class,
-        ]
+        ],
+
+        RequestedNewPasswordEvent::class => [
+            SendNewPassword::class,
+        ],
+
+        ChangedPasswordEvent::class => [],
     ];
 
     /**

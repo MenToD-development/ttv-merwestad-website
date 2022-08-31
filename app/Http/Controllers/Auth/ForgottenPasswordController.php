@@ -7,16 +7,15 @@ use App\View\Models\AuthLayout;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
-class RegistrationCompleteController extends Controller
+class ForgottenPasswordController extends Controller
 {
-    public function __invoke(
-        Request $request,
-    ): View {
+    public function __invoke(Request $request): View
+    {
         $model = new AuthLayout(
             config('app.name'),
-            'Aanmelding succesvol verzonden.',
+            'Je wachtwoord vergeten? Vraag hier een nieuw wachtwoord aan.',
         );
 
-        return view('pages.auth.registered', compact('model'));
+        return view('pages.auth.forgotten-password', compact('model'));
     }
 }

@@ -2,9 +2,9 @@
 
 namespace App\Listeners;
 
-use App\Models\User;
 use App\Events\RegistrationReceivedEvent;
-use App\Notifications\RegistrationReceived;
+use App\Models\User;
+use App\Notifications\RegistrationReceivedNotification;
 
 class NotifyUsersAboutNewRegistrationForm
 {
@@ -12,7 +12,7 @@ class NotifyUsersAboutNewRegistrationForm
     {
         $user = User::findOrFail(1);
 
-        $user->notify(new RegistrationReceived(
+        $user->notify(new RegistrationReceivedNotification(
             $event->name,
             $event->email,
             $event->notice,
