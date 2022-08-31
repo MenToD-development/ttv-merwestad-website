@@ -2,25 +2,26 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Event;
-use App\Models\User;
+use App\Events\RequestedNewPasswordEvent;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Events\RequestedNewPassword;
 use App\Http\Requests\AskForNewPasswordRequest;
+use App\Models\User;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Event;
 
 class SendNewPasswordController extends Controller
 {
-    public function __invoke(AskForNewPasswordRequest $request)
+    public function __invoke(AskForNewPasswordRequest $request): RedirectResponse
     {
-        $user = User::where(
-            'email',
-            '=',
-            $request->get('email'),
-        )->first();
+        $user = User::query()
+            ->email($request->get('email'))
+            ->firstOrFail();
 
-        $event = new RequestedNewPassword($user);
+        $event = new RequestedNewPasswordEvent($user);
 
         Event::dispatch($event);
+
+        return response()
+            ->redirectToRoute('my-merwestad.new-password-send');
     }
 }
