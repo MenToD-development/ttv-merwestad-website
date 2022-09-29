@@ -60,16 +60,16 @@
     <div class="w-full mb-8 md:mb-0 md:w-1/2 lg:w-1/4">
      <span class="inline-block text-white text-2xl font-serif mb-4">Documenten</span>
      <ul>
-       <li class="my-2">
-         <a href="{{ url('/documents/Merwestad-inschrijvingsformulier-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
-           Inschrijvingsformulier
-         </a>
-       </li>
-       <li class="my-2">
-         <a href="{{ url('/documents/Merwestad-aanmeldingshulp-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
-           Aanmeldingshulp document
-         </a>
-       </li>
+{{--       <li class="my-2">--}}
+{{--         <a href="{{ url('/documents/Merwestad-inschrijvingsformulier-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">--}}
+{{--           Inschrijvingsformulier--}}
+{{--         </a>--}}
+{{--       </li>--}}
+{{--       <li class="my-2">--}}
+{{--         <a href="{{ url('/documents/Merwestad-aanmeldingshulp-2020.docx') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">--}}
+{{--           Aanmeldingshulp document--}}
+{{--         </a>--}}
+{{--       </li>--}}
        <li class="my-2">
          <a href="{{ url('/documents/Mer2018-05-23-Privacy-Policy.pdf') }}" target="_blank" class="inline-block w-4/5 truncate text-white text-base font-sans font-bold hover:text-opacity-50">
            Privacyverklaring
