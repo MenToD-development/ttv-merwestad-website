@@ -17,9 +17,7 @@ class SendNewPasswordController extends Controller
             ->email($request->get('email'))
             ->firstOrFail();
 
-        $event = new RequestedNewPasswordEvent($user);
-
-        Event::dispatch($event);
+        Event::dispatch(new RequestedNewPasswordEvent($user));
 
         return response()
             ->redirectToRoute('my-merwestad.new-password-send');
