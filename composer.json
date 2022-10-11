@@ -1,5 +1,5 @@
 {
-    "name": "bondgenoot/ttv-merwestad-website",
+    "name": "mentod/ttv-merwestad-website",
     "type": "website",
     "description": "This repository contains the code for the website for T.T.V. Merwestad. A table tennis club from Dordrecht.",
     "keywords": ["framework", "laravel"],
