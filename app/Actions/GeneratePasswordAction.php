@@ -2,7 +2,7 @@
 
 namespace App\Actions;
 
-use App\DataTransferObjects\Password;
+use App\Values\Password;
 use Exception;
 
 class GeneratePasswordAction
@@ -13,7 +13,7 @@ class GeneratePasswordAction
      * Generate a random string, using a cryptographically secure
      * pseudorandom number generator (random_int)
      *
-     * @param  int     $length   How many characters do we want?
+     * @param  int  $length   How many characters do we want?
      * @param  string  $keyspace A string of all possible characters
      *                           to select from
      * @return Password

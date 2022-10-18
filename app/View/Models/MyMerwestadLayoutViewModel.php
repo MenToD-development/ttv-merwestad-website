@@ -2,14 +2,14 @@
 
 namespace App\View\Models;
 
-class MainLayout
+final class MyMerwestadLayoutViewModel extends LayoutViewModel
 {
     /**
      * Blade file for extending the layout.
      *
      * @var string
      */
-    public string $path = 'layouts.main';
+    public string $path = 'layouts.my-merwestad';
 
     /**
      * @var MainNavigation
@@ -20,10 +20,12 @@ class MainLayout
      * Constructs a new Main layout view model.
      */
     public function __construct(
-        public string $applicationName,
-        public string $pageTitle,
+        string $applicationName,
+        string $pageTitle,
         MainNavigation $mainNavigation = null,
     ) {
+        parent::__construct($applicationName, $pageTitle);
+
         $this->mainNavigation = $mainNavigation ?? $this->getMainNavigation();
     }
 
@@ -36,5 +38,14 @@ class MainLayout
     protected function getMainNavigation(): MainNavigation
     {
         return new MainNavigation($this->applicationName);
+    }
+
+    public function toArray(): array
+    {
+        return [
+            ...parent::toArray(),
+
+            'mainNavigation' => $this->getMainNavigation(),
+        ];
     }
 }

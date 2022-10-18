@@ -9,5 +9,7 @@ class RequestedNewPasswordEvent
 {
     use Dispatchable;
 
-    public function __construct(public User $user) { }
+    public function __construct(public User $user)
+    {
+    }
 }

@@ -2,9 +2,8 @@
 
 namespace App\Notifications;
 
+use App\Values\Password;
 use Illuminate\Bus\Queueable;
-use App\DataTransferObjects\Password;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
@@ -20,7 +19,8 @@ class NewPasswordNotification extends Notification
     public function __construct(
         public string $name,
         public Password $password,
-    ) { }
+    ) {
+    }
 
     /**
      * Get the notification's delivery channels.
@@ -42,7 +42,7 @@ class NewPasswordNotification extends Notification
     public function toMail(mixed $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->greeting('Beste ' . $this->name)
+            ->greeting('Beste '.$this->name)
             ->line('We hebben een nieuw wachtwoord voor je gegenereerd:')
             ->line($this->password->password)
             ->action('Klik hier om in te loggen', route('my-merwestad.login'));

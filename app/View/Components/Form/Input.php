@@ -13,8 +13,10 @@ abstract class Input extends Component
         public string $label,
         public string $name,
         public ?string $id = null,
+        public ?string $value = null,
         public ?string $placeholder = '',
         public ?bool $required = false,
+        public ?string $description = '',
         public ?string $autoComplete = 'email'
     ) {
         $this->id = $id ?? $this->name;

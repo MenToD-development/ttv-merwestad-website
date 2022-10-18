@@ -2,13 +2,11 @@
 
 namespace App\View\Models;
 
-use Illuminate\Contracts\Support\Arrayable;
-
 /**
  * @template TKey of array-key
  * @template TValue
  */
-class AuthLayout implements Arrayable
+final class AuthLayoutViewModel extends LayoutViewModel
 {
     /**
      * Blade file for extending the layout.
@@ -17,14 +15,18 @@ class AuthLayout implements Arrayable
      */
     public string $path = 'layouts.auth';
 
+    public ?string $image = null;
+
     /**
      * Constructs a new Main layout view model.
      */
     public function __construct(
-        public string $applicationName,
-        public string $pageTitle,
-        public ?string $image = null,
+        string $applicationName,
+        string $pageTitle,
+        ?string $image = null,
     ) {
+        parent::__construct($applicationName, $pageTitle);
+
         $this->image = $image ?? $this->getMainImage();
     }
 
@@ -43,9 +45,8 @@ class AuthLayout implements Arrayable
     public function toArray(): array
     {
         return [
-            'path' => $this->path,
-            'applicationName' => $this->applicationName,
-            'pageTitle' => $this->pageTitle,
+            ...parent::toArray(),
+
             'image' => $this->image,
         ];
     }

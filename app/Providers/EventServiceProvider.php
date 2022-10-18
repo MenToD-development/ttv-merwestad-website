@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use App\Listeners\SendNewPassword;
 use App\Events\ChangedPasswordEvent;
 use App\Events\RegistrationReceivedEvent;
 use App\Events\RequestedNewPasswordEvent;
 use App\Listeners\NotifyUsersAboutNewRegistrationForm;
+use App\Listeners\SendNewPassword;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

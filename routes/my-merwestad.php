@@ -1,21 +1,22 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\AuthenticateSessionController;
+use App\Http\Controllers\Auth\ForgottenPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Merwestad\DashboardController;
-use App\Http\Controllers\Auth\SendNewPasswordController;
 use App\Http\Controllers\Auth\NewPasswordSendController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\RegisterRequestController;
-use App\Http\Controllers\Auth\ForgottenPasswordController;
-use App\Http\Controllers\Auth\AuthenticateSessionController;
 use App\Http\Controllers\Auth\RegistrationCompleteController;
+use App\Http\Controllers\Auth\SendNewPasswordController;
+use App\Http\Controllers\Merwestad\DashboardController;
+use App\Http\Controllers\Merwestad\MyAccountController;
+use App\Http\Controllers\Merwestad\SaveAccountInformationController;
+use Illuminate\Support\Facades\Route;
 
 Route::name('my-merwestad.')
     ->prefix('mijn-merwestad')
     ->group(function () {
-
         // Login
         Route::get('inloggen', LoginController::class)
             ->name('login');
@@ -46,6 +47,10 @@ Route::name('my-merwestad.')
             ->group(function () {
                 Route::get('', DashboardController::class)
                     ->name('dashboard');
+
+                Route::get('mijn-account', MyAccountController::class)
+                    ->name('my-account');
+                Route::put('mijn-account', SaveAccountInformationController::class);
 
                 Route::post('uitloggen', LogoutController::class)
                     ->name('logout');

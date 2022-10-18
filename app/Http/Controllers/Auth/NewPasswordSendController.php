@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Illuminate\Http\Request;
-use App\View\Models\AuthLayout;
-use Illuminate\Contracts\View\View;
 use App\Http\Controllers\Controller;
+use App\View\Models\AuthLayoutViewModel;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\Request;
 
 class NewPasswordSendController extends Controller
 {
     public function __invoke(Request $request): View
     {
-        $viewModel = new AuthLayout(
+        $viewModel = new AuthLayoutViewModel(
             config('app.name'),
             'Wachtwoord vergeten?',
         );

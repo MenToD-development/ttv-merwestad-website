@@ -1,20 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Association\CompetitionController;
+use App\Http\Controllers\Association\RecreationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\LogoutController;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Merwestad\DashboardController;
-use App\Http\Controllers\Auth\RegisterRequestController;
-use App\Http\Controllers\Auth\SendNewPasswordController;
-use App\Http\Controllers\Auth\NewPasswordSendController;
-use App\Http\Controllers\Association\RecreationController;
-use App\Http\Controllers\Auth\ForgottenPasswordController;
-use App\Http\Controllers\Association\CompetitionController;
-use App\Http\Controllers\Auth\AuthenticateSessionController;
-use App\Http\Controllers\Auth\RegistrationCompleteController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

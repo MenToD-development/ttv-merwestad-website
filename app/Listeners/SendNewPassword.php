@@ -2,28 +2,29 @@
 
 namespace App\Listeners;
 
-use Exception;
-use App\Events\ChangedPasswordEvent;
-use Illuminate\Support\Facades\Event;
 use App\Actions\GeneratePasswordAction;
-use App\Events\RequestedNewPasswordEvent;
 use App\Actions\SavePasswordOntoUserAction;
+use App\Events\ChangedPasswordEvent;
+use App\Events\RequestedNewPasswordEvent;
 use App\Notifications\NewPasswordNotification;
+use Exception;
+use Illuminate\Support\Facades\Event;
 
 class SendNewPassword
 {
     public function __construct(
         protected GeneratePasswordAction $generatePasswordAction,
         protected SavePasswordOntoUserAction $savePasswordOntoUserAction,
-    ) { }
+    ) {
+    }
 
     /**
      * Handle the event.
      *
-     * @param RequestedNewPasswordEvent $event
+     * @param  RequestedNewPasswordEvent  $event
+     * @return void
      *
      * @throws Exception
-     * @return void
      */
     public function handle(RequestedNewPasswordEvent $event): void
     {

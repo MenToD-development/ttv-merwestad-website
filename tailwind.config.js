@@ -11,6 +11,9 @@ module.exports = {
       },
       "fontFamily": {
         "serif": ["Roboto Slab", "serif"]
+      },
+      fontSize: {
+        xs: '0.7rem',
       }
     },
 	},
